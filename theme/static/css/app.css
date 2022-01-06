@@ -155,6 +155,8 @@ li>code {
 
 .post-item div {
   font-size: var(--font-size-sm);
+  display: grid;
+  grid-template-columns: 6rem 1fr;
 }
 
 .post-item .post-tags {
@@ -168,6 +170,7 @@ li>code {
 .post-meta {
   margin: 3rem 0;
   color: var(--c-gray);
+  font-size: var(--font-size-sm);
 }
 
 .post-tags {
