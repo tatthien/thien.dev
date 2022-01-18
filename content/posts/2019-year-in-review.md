@@ -2,7 +2,7 @@
 title: 2019 Year in Review
 date: 2020-01-06T13:54:19.785Z
 description: My 2019
-tags: recap
+tags: recap, en
 ---
 
 It's time for 2019 recap. Let's check it out!
