@@ -1,5 +1,5 @@
 ---
-title: 4 ways to increase productivity at work
+title: 5 ways to increase productivity at work
 date: 2022-01-06T16:08:00.698Z
 tags: short, random, productivity, work
 ---
@@ -30,3 +30,8 @@ A short post about increasing productivity at work that I've learned in my Engli
 - Determine when you’re most alert: morning, afternoon, or evening
 - Prevent taking care of the big task when you’re burned out.
 - Understanding when and how you work best is the key.
+
+### Implement the "two-mininute rule"
+
+- Finding and immediately completing tasks that take two mininutes or less.
+- When you starting a new habit, it should take less than 2 mininutes to do.
