@@ -1,4 +1,6 @@
-{{define "extra_head"}}{{end}}
+{{define "extra_head"}}
+<link rel="stylesheet" href="/css/hl.css">
+{{end}}
 {{define "content"}}
 <main class="container">
     <a href="/" class="font-mono">cd $HOME</a>
@@ -16,5 +18,7 @@
     </div>
 </main>
 {{end}}
-{{define "extra_footer"}}{{end}}
+{{define "extra_footer"}}
+<script src="/js/hl.js" defer onload="hljs.initHighlightingOnLoad()"></script>
+{{end}}
 {{template "base.html" .}}

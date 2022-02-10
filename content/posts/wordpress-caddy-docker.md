@@ -7,7 +7,7 @@ draft: false
 
 Project structure
 
-```
+```shell
 ├── Caddyfile
 ├── caddy_config/
 ├── caddy_data/
@@ -68,7 +68,7 @@ networks:
 
 Caddyfile
 
-```
+```shell
 {
 	email email@example.com
 }
