@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="/css/app.css">
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32.png">
 
@@ -43,7 +45,7 @@
 <body>
     {{if ne .IsHome true}}
     <div class="container-fluid">
-        <a href="/">
+        <a href="/" class="logo">
             <svg width="40" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="64" height="64" fill="#151515" />
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -64,12 +66,12 @@
             <a href="https://12bit.vn" target="_blank">12bit.vn</a>
         </nav>
     </footer>
-  
+
     <script src="https://unpkg.com/quicklink@2.2.0/dist/quicklink.umd.js"></script>
     <script>
-      quicklink.listen()
+        quicklink.listen()
     </script>
-    
+
     {{template "extra_footer" .}}
 </body>
 

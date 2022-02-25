@@ -22,11 +22,12 @@
   --container-w: 650px;
   --font-size-sm: 0.875rem;
   --font-mono: Iosevka Mono, monospace;
-  --font-sans: 'Inter', sans-serif;
+  --font-primary: 'IBM Plex Serif', serif;
 }
 
 body {
-  font-family: var(--font-sans);
+  font-family: var(--font-primary);
+  font-size: 18px;
   color: #151515;
   padding: 2vh 0;
   line-height: 1.6;
@@ -63,6 +64,7 @@ body {
 
 pre, code {
   font-family: var(--font-mono);
+  font-size: 1rem;
 }
 
 a {
@@ -116,6 +118,12 @@ li>code {
   font-weight: 500;
 }
 
+.logo {
+  font-size: 0;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
 .site-footer {
   border-top: 1px solid #cfcfcf;
   padding-top: 0.25rem;
@@ -156,10 +164,6 @@ li>code {
   font-size: var(--font-size-sm);
   display: grid;
   grid-template-columns: 6rem 1fr;
-}
-
-.post-item .post-tags {
-  margin-left: 0.75rem;
 }
 
 .post-date {

@@ -1,7 +1,7 @@
 {{define "extra_head"}}{{end}}
 {{define "content"}}
 <main class="container">
-    <a href="/" class="font-mono">cd $HOME</a>
+    <a href="/" class="font-mono">> cd $HOME</a>
     <h1><span class="text-muted">Tag:</span> {{ .Tag.Name }}</h1>
     <ul class="post-list">
         {{ range .Tag.Posts }}
