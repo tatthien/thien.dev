@@ -1,7 +1,7 @@
 ---
 title: 5 ways to increase productivity at work
 date: 2022-01-06T16:08:00.698Z
-tags: short, random, productivity, work, en
+tags: short, random, productivity, work
 ---
 
 A short post about increasing productivity at work that I've learned in my English class.
