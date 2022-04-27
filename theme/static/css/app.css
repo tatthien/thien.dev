@@ -118,6 +118,26 @@ li>code {
   font-weight: 500;
 }
 
+blockquote {
+  position: relative;
+  background: #f6f6f6;
+  border: 1px solid #c1c1c1;
+  border-radius: 0.25rem;
+  margin: 0;
+  padding: 0.25rem 1rem 0.25rem 1.5rem;
+}
+
+blockquote:before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  left: 3px;
+  width: 4px;
+  background: var(--c-primary);
+  border-radius: 50px;
+}
+
 .logo {
   font-size: 0;
   display: inline-block;
