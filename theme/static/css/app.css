@@ -33,6 +33,10 @@ body {
   line-height: 1.6;
 }
 
+*:focus {
+  outline: dotted var(--c-primary);
+}
+
 .container {
   max-width: var(--container-w);
   margin: 0 auto;
