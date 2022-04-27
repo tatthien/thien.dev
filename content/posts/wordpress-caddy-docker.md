@@ -5,7 +5,13 @@ tags: docker, caddy, wordpress, short
 draft: false
 ---
 
-Project structure
+If you're going to setup a WordPress site that using Docker. The config below may be interesting.
+
+Everything is normal, however I decide to use [Caddy](https://caddyserver.com/) instead of Nginx for the virtual host.
+
+> A short introduction about Caddy: it's open source web server, automatic HTTPS and writter in Go.
+
+Project structure:
 
 ```shell
 ├── Caddyfile
@@ -17,7 +23,7 @@ Project structure
 └── src/
 ```
 
-docker-compose.yml
+`docker-compose.yml`
 
 ```yml
 version: '3'
@@ -66,7 +72,7 @@ networks:
   wordpress: {}
 ```
 
-Caddyfile
+`Caddyfile`
 
 ```shell
 {
