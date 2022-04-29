@@ -23,7 +23,7 @@ Project structure:
 └── src/
 ```
 
-`docker-compose.yml`
+The full config of `docker-compose.yml`
 
 ```yml
 version: '3'
