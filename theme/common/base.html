@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,35 +40,38 @@
     <meta name="twitter:image" content="/img/og-image.webp">
 
     {{template "extra_head" .}}
-</head>
+  </head>
 
-<body>
-    {{if ne .IsHome true}}
-    <div class="container-fluid">
+  <body>
+    <div class="_giraffe">
+      {{if ne .IsHome true}}
+      <div class="container-fluid py-4">
         <a href="/" class="logo">
           <img src="/img/avatar.jpg" atl="gopher" style="width: 50px; height: auto; border-radius: 0.75rem;" /> 
         </a>
-    </div>
-    {{end}}
+      </div>
+      {{end}}
 
-    {{template "content" .}}
+      {{template "content" .}}
 
-    <footer class="site-footer">
-        <p>Code is poetry</p>
+      <footer class="site-footer">
+        <div>Code is poetry</div>
         <nav>
-            <a href="/tags/index.html">tags</a>
-            <a href="/rss.xml">rss</a>
-            <a href="https://12bit.vn" target="_blank">12bit.vn</a>
-            <a href="https://github.com/tatthien/giraffe" target="_blank">giraffe</a>
+          <a href="/tags/index.html">tags</a>
+          <a href="/rss.xml">rss</a>
+          <a href="https://12bit.vn" target="_blank">12bit.vn</a>
+          <a href="https://github.com/tatthien/giraffe" target="_blank">giraffe</a>
         </nav>
-    </footer>
+      </footer>
 
-    <script src="https://unpkg.com/quicklink@2.2.0/dist/quicklink.umd.js"></script>
-    <script>
+      <script src="https://unpkg.com/quicklink@2.2.0/dist/quicklink.umd.js"></script>
+      <script>
         quicklink.listen()
-    </script>
+      </script>
 
-    {{template "extra_footer" .}}
-</body>
+      {{template "extra_footer" .}}
+
+    </div>
+  </body>
 
 </html>

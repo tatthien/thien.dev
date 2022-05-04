@@ -29,19 +29,26 @@ body {
   font-family: var(--font-primary);
   font-size: 18px;
   color: #151515;
-  padding: 2vh 0;
   line-height: 1.6;
+  min-height: 100vh;
 }
 
 *:focus {
   outline: dotted var(--c-primary);
 }
 
+/** Utilities **/
 .container {
-  max-width: var(--container-w);
+  width: 100vw;
   margin: 0 auto;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+@media all and (min-width: 768px) {
+  .container {
+    width: var(--container-w);
+  }
 }
 
 .container-fluid {
@@ -64,6 +71,34 @@ body {
 
 .mb-2 {
   margin-bottom: 0.5rem;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bototm: 1rem;
+}
+
+.c-gray {
+  color: var(--c-gray);
+}
+/** End Utilities **/
+
+._giraffe {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 1 0;
 }
 
 pre, code {
@@ -149,12 +184,12 @@ blockquote:before {
 }
 
 .site-footer {
-  border-top: 1px solid #cfcfcf;
-  padding-top: 0.25rem;
+  padding: 0.5rem 0;
   margin-top: 2rem;
   text-align: center;
   font-size: var(--font-size-sm);
   color: var(--c-gray);
+  background: #f4f4f4;
 }
 
 .site-footer a {
@@ -186,12 +221,12 @@ blockquote:before {
 
 .post-item div {
   font-size: var(--font-size-sm);
-  display: grid;
-  grid-template-columns: 6rem 1fr;
 }
 
 .post-date {
   color: var(--c-gray);
+  margin-right: 0.75rem;
+  font-variant-numeric: tabular-nums slashed-zero;
 }
 
 .post-meta {
