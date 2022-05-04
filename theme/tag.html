@@ -4,7 +4,6 @@
     <h1><span class="text-muted">Tag:</span> {{ .Tag.Name }}</h1>
     <ul class="post-list">
         {{ range .Tag.Posts }}
-        {{ if eq .Type "posts"}}
         <li class="post-item">
             <a href="{{ .Permarlink }}">{{ .Title }}</a>
             <div>
@@ -15,7 +14,6 @@
                 </span>
             </div>
         </li>
-        {{ end }}
         {{ end }}
     </ul>
 </main>
