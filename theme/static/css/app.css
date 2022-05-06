@@ -245,3 +245,10 @@ blockquote:before {
   border-radius: 0.25rem;
   border: 1px solid var(--c-primary);
 }
+
+@media all and (min-width: 768px) {
+  .cp_embed_wrapper {
+    margin-left: -5vw;
+    margin-right: -5vw;
+  }
+}
