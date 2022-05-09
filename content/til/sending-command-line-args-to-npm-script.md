@@ -31,7 +31,7 @@ Here's how I pass arguments to my script.
 npm run build -- --watch // invokes `node ./build.js --watch`
 ```
 
-If your params do not start with `-` or `--`, the having an explicit `--` is not needed. For examples:
+If your params do not start with `-` or `--`, then having an explicit `--` is not needed. For examples:
 
 ```
 npm run build api // invokes `node ./build.js api`
