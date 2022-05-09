@@ -44,13 +44,22 @@
 
   <body>
     <div class="_giraffe">
-      {{if ne .IsHome true}}
-      <div class="container-fluid py-4">
-        <a href="/" class="logo">
-          <img src="/img/avatar.jpg" atl="gopher" style="width: 50px; height: auto; border-radius: 0.75rem;" /> 
-        </a>
+      <div class="site-header container py-4">
+        <div class="flex justify-between items-center">
+          <a href="/" class="logo">
+            <img src="/img/avatar.jpg" atl="gopher" style="width: 50px; height: auto; border-radius: 0.75rem;" /> 
+          </a>
+  
+          <div class="theme-switcher">
+            <label for="theme">Theme</label>
+            <select id="theme" onchange="setTheme(this.value)">
+              <option value="system">System</option>
+              <option value="light">Light</option>
+              <option value="dark">Dark</option>
+            </select>
+          </div>
+        </div>
       </div>
-      {{end}}
 
       {{template "content" .}}
 
@@ -67,6 +76,35 @@
       <script src="https://unpkg.com/quicklink@2.2.0/dist/quicklink.umd.js"></script>
       <script>
         quicklink.listen()
+      </script>
+
+      <script>
+        const selectElm = document.querySelector('select[id="theme"]')
+       
+        const handler = {
+          get(target, prop, receiver) {
+            return Reflect.get(...arguments)
+          },
+          set(target, prop, value, receiver) {
+            if (prop === 'theme' && ['system', 'light', 'dark'].includes(value)) {
+              document.documentElement.setAttribute('data-theme', value)
+            }
+            
+            return Reflect.set(...arguments)
+          }
+        }
+
+        const reactive = new Proxy({
+          theme: 'system',
+        }, handler)
+
+        reactive.theme = localStorage.getItem('theme') || 'system'
+        selectElm.value = reactive.theme
+
+        function setTheme(theme) {
+          localStorage.setItem('theme', theme)
+          reactive.theme = theme
+        }
       </script>
 
       {{template "extra_footer" .}}

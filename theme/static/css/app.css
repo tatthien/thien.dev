@@ -10,11 +10,42 @@
 
 :root {
   --c-primary: #e41359;
-  --c-gray: #888;
   --container-w: 650px;
   --font-size-sm: .875rem;
   --font-mono: iosevka mono, monospace;
   --font-primary: "Work Sans", serif;
+}
+
+:root[data-theme="dark"] {
+  --bg: #151515;
+  --bg-footer: #1f1f1f;
+  --c-body: #fafafa;
+  --c-gray: #bababa;
+}
+
+:root[data-theme="light"] {
+  --bg: #fff;
+  --bg-footer: #f4f4f4;
+  --c-body: #151515;
+  --c-gray: #888;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="dark"], [data-theme="light"]) {
+    --bg: #151515;
+    --bg-footer: #1f1f1f;
+    --c-body: #fafafa;
+    --c-gray: #bababa;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"], [data-theme="light"]) {
+    --bg: #fff;
+    --bg-footer: #f4f4f4;
+    --c-body: #151515;
+    --c-gray: #888;
+  }
 }
 
 body {
@@ -22,7 +53,8 @@ body {
   font-family: var(--font-primary);
   font-size: 18px;
   line-height: 1.6;
-  color: #151515;
+  color: var(--c-body);
+  background: var(--bg);
 }
 
 *:focus {
@@ -82,12 +114,29 @@ body {
   color: var(--c-gray);
 }
 
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
+}
+
 /** End Utilities **/
 
 ._giraffe { /* stylelint-disable-line */
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+.site-header {
+  margin-bottom: 2rem;
 }
 
 main {
@@ -146,6 +195,7 @@ ol {
 
 pre {
   padding: .5rem;
+  margin-bottom: 1rem;
   overflow-x: auto;
   background: #f6f6f6;
   border-radius: .5rem;
@@ -179,7 +229,6 @@ blockquote::before {
 
 .logo {
   display: inline-block;
-  margin-bottom: 2rem;
   font-size: 0;
 }
 
@@ -189,7 +238,7 @@ blockquote::before {
   font-size: var(--font-size-sm);
   color: var(--c-gray);
   text-align: center;
-  background: #f4f4f4;
+  background: var(--bg-footer);
 }
 
 .site-footer a {
@@ -244,6 +293,11 @@ blockquote::before {
   padding: 0 .5rem;
   border: 1px solid var(--c-primary);
   border-radius: .25rem;
+}
+
+/** Theme Switcher **/
+.theme-switcher {
+  font-size: .875rem;
 }
 
 @media all and (min-width: 768px) {
