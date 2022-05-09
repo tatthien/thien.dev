@@ -21,19 +21,19 @@ After googling. I find that I need to use `--` separator to separate the params 
 
 The syntax is as follows:
 
-```
+```bash
 npm run <command> -- [-- <args>]
 ```
 
 Here's how I pass arguments to my script.
 
-```
+```bash
 npm run build -- --watch // invokes `node ./build.js --watch`
 ```
 
 If your params do not start with `-` or `--`, then having an explicit `--` is not needed. For examples:
 
-```
+```bash
 npm run build api // invokes `node ./build.js api`
 npm run build -- api // also invokes `node ./build.js api`
 ```
