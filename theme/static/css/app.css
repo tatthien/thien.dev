@@ -342,10 +342,12 @@ blockquote p {
   gap: .25rem;
 }
 
-.post-tags a {
-  padding: 0 .5rem;
-  border: 1px solid var(--c-primary);
-  border-radius: .25rem;
+.post-tags span:after {
+  content: '•';
+}
+
+.post-tags span:last-child:after {
+  content: '';
 }
 
 /** Theme Switcher **/

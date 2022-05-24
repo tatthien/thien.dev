@@ -14,7 +14,9 @@
         <div class="mb-2">{{.Post.Date.Format "Jan 2, 2006"}}</div>
         <nav class="post-tags">
             {{range .Post.Tags}}
-            <a href="/tags/{{slugify .}}.html">{{.}}</a>
+            <span>
+                <a href="/tags/{{slugify .}}.html">{{.}}</a>
+            </span>
             {{end}}
         </nav>
     </div>
