@@ -227,6 +227,11 @@ h6 {
   margin-bottom: 1.25rem;
 }
 
+h1 {
+  font-size: 2.5rem;
+  line-height: 3rem;
+}
+
 ol,
 ul {
   padding: 0;

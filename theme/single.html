@@ -3,7 +3,9 @@
 {{end}}
 {{define "content"}}
 <main class="container">
-    <a href="/{{.Post.Type}}" class="c-gray">◄ All posts</a>
+    <div class="mb-4">
+        <a href="/{{.Post.Type}}" class="c-gray">◄ All posts</a>
+    </div>
     <div>
         <h1>{{.Post.Title}}</h1>
         <div>{{safe_html .Post.Content}}</div>
