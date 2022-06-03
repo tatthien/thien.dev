@@ -10,8 +10,8 @@ Use a better box model (opinionated).
 */
 
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 *,
