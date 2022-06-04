@@ -1,19 +1,20 @@
 {
   "name": "thien-dev-theme",
   "version": "1.0.0",
-  "description": "Giraffe theme for thien.dev",
+  "description": "Giraffe's theme for thien.dev",
   "main": "index.js",
   "scripts": {
-    "stylelint": "stylelint 'static/css/**/*.css' --fix"
+    "style:lint": "stylelint 'static/css/**' --fix --cache --cache-location .cache/.stylelint"
   },
   "keywords": [],
   "author": {
     "name": "Thien Nguyen",
-    "email": "me@thien.dev"
+    "email": "me@thien.dev",
+    "url": "https://thien.dev"
   },
   "license": "ISC",
   "devDependencies": {
-    "stylelint": "^14.8.2",
-    "stylelint-config-twbs-bootstrap": "^3.0.1"
+    "stylelint": "^14.8.5",
+    "stylelint-config-twbs-bootstrap": "^4.0.0"
   }
 }

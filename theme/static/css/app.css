@@ -121,8 +121,8 @@ body {
 }
 
 .px-8 {
-  padding-left: 2rem;
   padding-right: 2rem;
+  padding-left: 2rem;
 }
 
 .c-gray {
@@ -151,19 +151,19 @@ body {
 }
 
 .site-header {
-  margin-bottom: 2rem;
-  background-color: var(--bg-footer);
-  padding: 0.5rem 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: .5rem 1rem;
+  margin-bottom: 2rem;
+  background-color: var(--bg-footer);
 }
 
 .site-header a {
   font-family: var(--font-mono);
   font-size: 1rem;
-  text-decoration: none;
   color: var(--c-body);
+  text-decoration: none;
 }
 
 .site-header a:hover {
@@ -301,10 +301,10 @@ blockquote p {
 }
 
 .post-date {
+  display: block;
   margin-right: .75rem;
   font-variant-numeric: tabular-nums slashed-zero;
   color: var(--c-gray);
-  display: block;
 }
 
 .post-meta {
@@ -318,24 +318,24 @@ blockquote p {
   gap: .25rem;
 }
 
-.post-tags span:after {
-  content: '•';
+.post-tags span::after {
+  content: "•";
 }
 
-.post-tags span:last-child:after {
-  content: '';
+.post-tags span:last-child::after {
+  content: "";
 }
 
 /** Theme Switcher **/
 .theme-switch-button {
-  border: 1px solid var(--theme-switch-border-color);
-  background: var(--theme-switch-bg);
+  position: relative;
   display: block;
   width: 40px;
   height: 22px;
-  border-radius: 11px;
-  position: relative;
   cursor: pointer;
+  background: var(--theme-switch-bg);
+  border: 1px solid var(--theme-switch-border-color);
+  border-radius: 11px;
 }
 
 .theme-switch-button input {
@@ -355,15 +355,15 @@ blockquote p {
   background: #fff;
   border: 1px solid var(--theme-switch-border-color);
   border-radius: 50%;
-  transition: background-color .25s,transform .25s;
+  transition: background-color .25s, transform .25s;
 }
 
 .theme-switch-icon svg {
   position: absolute;
+  top: 2px;
+  left: 2px;
   width: 12px;
   height: 12px;
-  left: 2px;
-  top: 2px;
   opacity: 1;
 }
 
@@ -386,11 +386,9 @@ blockquote p {
     gap: 1.5rem;
     margin-bottom: 3rem;
   }
-  
   #hero svg {
     flex-shrink: 0;
   }
-  
   #hero p {
     margin: 0;
   }
