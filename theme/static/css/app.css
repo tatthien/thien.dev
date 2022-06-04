@@ -189,6 +189,15 @@ a:hover {
   text-decoration: underline;
 }
 
+[target="_blank"]::after {
+  position: relative;
+  top: -4px;
+  margin-left: 2px;
+  font-size: .75rem;
+  color: var(--c-gray);
+  content: "◹";
+}
+
 p {
   margin-bottom: 1.25rem;
 }
