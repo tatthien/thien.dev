@@ -13,7 +13,7 @@
   --container-w: 650px;
   --font-size-sm: .875rem;
   --font-mono: iosevka mono, monospace;
-  --font-primary: "Work Sans", serif;
+  --font-primary: "Inter", sans-serif;
 }
 
 :root[data-theme="dark"] {
