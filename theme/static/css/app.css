@@ -598,3 +598,7 @@ blockquote p {
   padding: 0 0.75rem;
   font-weight: normal;
 }
+
+.gumroad-button::after {
+  display: none;
+}
