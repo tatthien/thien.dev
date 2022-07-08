@@ -602,3 +602,38 @@ blockquote p {
 .gumroad-button::after {
   display: none;
 }
+
+.loading-screen {
+  background-color: #FFE53B;
+  background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading-screen .icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: spin 1s linear infinite;
+}
+
+.loading-screen .text {
+  font-size: 1.25rem;
+  color: #fff;
+  margin: 0.5rem 0;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
