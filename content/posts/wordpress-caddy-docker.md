@@ -90,3 +90,7 @@ www.your-site.com {
 	redir https://your-side.com{uri}
 }
 ```
+
+Update 7 Aug 2022:
+
+If you want to serve multiple WordPress sites using Caddy, please follow this tutorial: https://www.winters.nz/docker/wordpress-caddy/
