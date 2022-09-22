@@ -218,6 +218,7 @@
   --font-size-sm: .875rem;
   --font-mono: iosevka mono, monospace;
   --font-primary: "Inter var", sans-serif;
+  --font-serif: "Literata", serif;
 }
 
 :root[data-theme="dark"] {
@@ -360,6 +361,14 @@ body {
 
 .items-center {
   align-items: center;
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.text-italic {
+  font-style: italic;
 }
 
 .animated {
@@ -534,12 +543,18 @@ li > code {
 blockquote {
   padding: 0 2rem;
   margin-bottom: 1rem;
-  font-size: 1rem;
   font-style: italic;
+  font-family: var(--font-serif);
+  color: var(--c-gray);
 }
 
 blockquote p {
   margin: 0;
+}
+
+.post-content a {
+  font-family: var(--font-serif);
+  font-style: italic;
 }
 
 .logo {

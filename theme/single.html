@@ -8,7 +8,7 @@
     </div>
     <div>
         <h1>{{.Post.Title}}</h1>
-        <div>{{safe_html .Post.Content}}</div>
+        <div class="post-content">{{safe_html .Post.Content}}</div>
     </div>
     <div class="post-meta">
         <div class="mb-2">{{.Post.Date.Format "Jan 2, 2006"}}</div>
