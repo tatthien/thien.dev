@@ -496,6 +496,7 @@ h4,
 h5,
 h6 {
   margin-bottom: 1.25rem;
+  font-weight: 600;
 }
 
 h1 {
