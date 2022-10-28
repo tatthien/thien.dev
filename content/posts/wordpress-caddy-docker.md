@@ -93,4 +93,4 @@ www.your-site.com {
 
 Update 7 Aug 2022:
 
-If you want to serve multiple WordPress sites using Caddy, please follow this tutorial: https://www.winters.nz/docker/wordpress-caddy/
+If you want to serve multiple WordPress sites using Caddy, please follow [this tutorial](https://www.winters.nz/docker/wordpress-caddy/)
