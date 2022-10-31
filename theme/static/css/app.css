@@ -343,6 +343,7 @@ blockquote {
   margin-bottom: 1rem;
   font-style: italic;
   font-family: var(--font-serif);
+  font-size: 1.5rem;
   color: var(--c-gray);
 }
 
