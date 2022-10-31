@@ -240,7 +240,6 @@ body {
   justify-content: space-between;
   padding: .5rem 1rem;
   margin-bottom: 2rem;
-  background-color: var(--bg-footer);
 }
 
 .site-header a {
