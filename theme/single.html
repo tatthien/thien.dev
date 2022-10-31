@@ -2,12 +2,12 @@
 <link rel="stylesheet" href="/css/hl.css">
 {{end}}
 {{define "content"}}
-<main class="container">
+<main class="container single">
     <div class="mb-4">
         <a href="/{{.Post.Type}}" class="c-gray">◄ All posts</a>
     </div>
     <div>
-        <h1>{{.Post.Title}}</h1>
+        <h1 class="post-title">{{.Post.Title}}</h1>
         <div class="post-content">{{safe_html .Post.Content}}</div>
     </div>
     <div class="post-meta">

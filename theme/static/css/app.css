@@ -383,9 +383,14 @@ table th {
   border-bottom: 1px solid var(--table-border);
 }
 
+.post-title {
+  font-weight: 800;
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
 .post-content a {
-  font-family: var(--font-serif);
-  font-style: italic;
+  text-decoration: underline;
 }
 
 .logo {
