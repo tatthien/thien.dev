@@ -1,14 +1,6 @@
 @import "reset.css";
 
 @font-face {
-  font-family: "Iosevka Mono";
-  font-style: normal;
-  font-weight: 400;
-  src: url("/fonts/Iosevka-Mono.woff2") format("woff2"), url("/fonts/Iosevka-Mono.woff") format("woff");
-  font-display: swap;
-}
-
-@font-face {
   font-family: "Manrope";
   font-style: normal;
   font-weight: 100 900;
@@ -19,7 +11,7 @@
 :root {
   --container-w: 650px;
   --font-size-sm: .875rem;
-  --font-mono: iosevka mono, monospace;
+  --font-mono: Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, serif;
   --font-primary: "Manrope", sans-serif;
   --font-serif: "Literata", serif;
 }
