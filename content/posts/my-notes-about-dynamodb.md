@@ -1,5 +1,5 @@
 ---
-title: My notes on DynamoDB
+title: My notes about DynamoDB
 date: 2022-10-31T09:25:00.698Z
 tags: dynamodb
 draft: false
@@ -47,7 +47,7 @@ Let's take an example to see how PK and SK work. Suppose I'm storing the data of
 | EXT#Catex   | METADATA#Catex   | Title/Description/URL   |
 | EXT#Catex   | VERSION#2.0.0    | Revision/Version/Readme |
 
-![Partition key and sort key](/img/my-notes-on-dynamodb/dynamodb-1.png)
+![Partition key and sort key](/img/my-notes-about-dynamodb/dynamodb-1.png)
 
 Let's explain a bit. Version 1.0.0 and 1.1.0 have the same partition key but diffrent sort key, because they're both belong to the extension Stealth. This extension's information determines by the sort key `METADATA#Stealth` that having attributes: Title, Description and URL.
 
