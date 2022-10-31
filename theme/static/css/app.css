@@ -324,11 +324,20 @@ ol {
 }
 
 pre {
-  padding: .5rem;
+  padding: .5rem 1rem;
   margin-bottom: 1rem;
   overflow-x: auto;
   background: var(--highlight-bg);
   border-radius: .5rem;
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+
+@media all and (min-width: 768px) {
+  pre {
+    margin-left: -2rem;
+    margin-right: -2rem;
+  }
 }
 
 p > code,
