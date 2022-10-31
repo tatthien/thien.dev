@@ -62,7 +62,7 @@ In DynamoDB, secondary indexes are useful to query data. There are two types of 
 
 This concept is really new to me. I didn't know it till I dig into DynamoDB.
 
-What is single table design? In short (as I understand), **single table is equal to database (in RDB)**. One table keeps all of the data of an application. And because there are no joins in DynamoDB. Single table helps us to solve the data relationship issues.
+What is single table design? In short (as I understand), **single table is equal to database (in RDB)**. One table keeps all of the data of your application. And because there are no joins in DynamoDB. Single table helps us to solve the data relationship issues.
 
 When working with this concept, I've learned something.
 
@@ -77,7 +77,7 @@ I'll reuse [the extensions example](#partition-key-sort-key) above:
 3. Retrieve only the versions from a specific extension.
 4. Retrieve a specific version from a specific extension.
 
-As you can see, we have four access patterns (and more). Defining these are really important and must be done firstly since access patterns will decide how we design our table with PK, SK and secondary indexes.
+As you can see, we have four access patterns (and more). Defining these are really important and must be done firstly since access patterns will decide how we shape the structure of our table with PK, SK and secondary indexes.
 
 ### Relationships
 
@@ -104,6 +104,14 @@ func (c GetExtensionVersions) ToKeyConditionBuilder() expression.KeyConditionBui
 	return expression.Key("PK").Equal(expression.Value("EXT#" + c.Package)).And(sk)
 }
 ```
+
+## References
+
+I cannot learn and write up about DynamoDB without these references.
+
+- https://www.dynamodbguide.com/
+- https://www.alexdebrie.com/posts/dynamodb-one-to-many/
+- https://blog.devgenius.io/how-to-do-single-table-design-with-dynamodb-db9101a43277
 
 ## Conclusion
 
