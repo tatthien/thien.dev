@@ -70,7 +70,7 @@ When working with this concept, I've learned something.
 
 In a simple word, access patterns is how we want to retrieve data from DynamoDB. Let's define some access patterns:
 
-I'll reuse the extensions example above:
+I'll reuse [the extensions example](#partition-key-sort-key) above:
 
 1. Retrieve an extension.
 2. Retrieve an extension and all the versions of that extension.
