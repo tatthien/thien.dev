@@ -72,7 +72,7 @@ body {
   min-height: 100vh;
   font-family: var(--font-primary);
   font-size: 18px;
-  line-height: 1.6;
+  line-height: 32px;
   color: var(--c-body);
   background: var(--bg);
 }
