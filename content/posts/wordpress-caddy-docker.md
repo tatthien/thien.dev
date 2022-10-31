@@ -1,5 +1,5 @@
 ---
-title: WordPress Caddy & Docker
+title: WordPress, Caddy & Docker
 date: 2022-02-10T09:25:00.698Z
 tags: docker, caddy, wordpress, short
 draft: false
