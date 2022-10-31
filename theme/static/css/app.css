@@ -17,7 +17,6 @@
 }
 
 :root {
-  --c-primary: #e41359;
   --container-w: 650px;
   --font-size-sm: .875rem;
   --font-mono: iosevka mono, monospace;
@@ -26,6 +25,7 @@
 }
 
 :root[data-theme="dark"] {
+  --c-primary: #fff;
   --bg: #151515;
   --bg-footer: #1f1f1f;
   --c-body: #fafafa;
@@ -47,6 +47,7 @@
 }
 
 :root[data-theme="light"] {
+  --c-primary: #151515;
   --bg: #fff;
   --bg-footer: #f4f4f4;
   --c-body: #151515;
@@ -184,7 +185,7 @@ body {
   align-items: center;
   padding: .75rem 1.5rem;
   font-weight: 500;
-  color: #fff;
+  color: var(--bg);
   cursor: pointer;
   background-color: var(--c-primary);
   border-radius: 48px;
@@ -401,6 +402,7 @@ blockquote p {
 
 .post-item a {
   color: var(--c-primary);
+  font-weight:500;
 }
 
 .post-item div {
@@ -495,6 +497,8 @@ blockquote p {
   }
   #hero svg {
     flex-shrink: 0;
+    position: relative;
+    top: -10px;
   }
   #hero p {
     margin: 0;
