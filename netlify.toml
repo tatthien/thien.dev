@@ -1,7 +1,7 @@
 [[headers]]
-  for = "fonts/*"
-  [headers.values]
-  cache-control = '''
-  max-age=31536000,
-  public'''
+for = "/*"
+[headers.values]
+cache-control = '''
+max-age=31536000
+public'''
 
