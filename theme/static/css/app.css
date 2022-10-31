@@ -36,6 +36,7 @@
   --highlight-addition: #76c490;
   --theme-switch-bg: #2c2c2c;
   --theme-switch-border-color: #454545;
+  --table-border: #e2e8f0;
 }
 
 :root[data-theme="light"] {
@@ -58,6 +59,7 @@
   --highlight-addition: #2f6f44;
   --theme-switch-bg: #e6e6e6;
   --theme-switch-border-color: #b9b9b9;
+  --table-border: #e2e8f0;
 }
 
 body {
@@ -357,6 +359,28 @@ blockquote {
 
 blockquote p {
   margin: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+table {
+  width: 100%;
+  margin-bottom: 1rem;
+  text-align: left;
+  border-collapse: collapse;
+  border: 1px solid var(--table-border);
+  border-radius: 0.5rem;
+}
+
+table td,
+table th {
+  padding: 0.25rem;
+  border-right: 1px solid var(--table-border);
+  border-bottom: 1px solid var(--table-border);
 }
 
 .post-content a {
