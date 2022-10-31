@@ -9,7 +9,7 @@ If you're going to setup a WordPress site that using Docker. The config below ma
 
 Everything is normal, however I decide to use [Caddy](https://caddyserver.com/) instead of Nginx for the virtual host.
 
-> A short introduction about Caddy: it's open source web server, automatic HTTPS and writter in Go.
+> Caddy is an open source web server, automatic HTTPS and writter in Go.
 
 Project structure:
 
