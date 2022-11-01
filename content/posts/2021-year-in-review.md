@@ -14,8 +14,11 @@ This year I:
 - rented a new apartment.
 - (my team) changed product's vision.
 
-These are the remarkable things that happened in my life this year. Hopefully, 2022 will be a better year.
+These are the remarkable things that happened this year. Hopefully, 2022 will be a better year.
 
-----
+Read others end-of-year reflection posts.
 
-FYI, while I was writting this post. I was also building a static site generator in Golang. This website is built with it. Please take a look at [giraffe](https://github.com/tatthien/giraffe).
+[2020](/posts/2020-year-in-review.html)
+[2019](/posts/2019-year-in-review.html)
+[2018](/posts/2018-year-in-review.html)
+[2017](/posts/2017-year-in-review.html)

@@ -92,4 +92,6 @@ www.your-site.com {
 
 Updated at 7 Aug 2022:
 
+I cannot learn and write up about DynamoDB without these references.
+
 If you want to serve multiple WordPress sites using Caddy, please follow [this tutorial](https://www.winters.nz/docker/wordpress-caddy/)

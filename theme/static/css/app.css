@@ -38,6 +38,7 @@
   --table-border: #e2e8f0;
   --code-block-border: #454545;
   --bg-footer: #1f1f1f;
+  --bg-header: rgba(21,21,21, .8);
 }
 
 :root[data-theme="light"] {
@@ -62,6 +63,7 @@
   --table-border: #e2e8f0;
   --code-block-border: #efefef;
   --bg-footer: #f4f4f4;
+  --bg-header: rgba(255,255,255, .6);
 }
 
 body {
@@ -252,6 +254,12 @@ body {
   justify-content: space-between;
   padding: .5rem 1rem;
   margin-bottom: 2rem;
+  position: sticky;
+  top: 0;
+  --webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  background: var(--bg-header);
+  z-index: 99;
 }
 
 .site-header a {
@@ -391,11 +399,12 @@ table {
   border-collapse: collapse;
   border: 1px solid var(--table-border);
   border-radius: 0.5rem;
+  font-size: 1rem;
 }
 
 table td,
 table th {
-  padding: 0.25rem;
+  padding: 0.25rem 0.5rem;
   border-right: 1px solid var(--table-border);
   border-bottom: 1px solid var(--table-border);
 }
@@ -436,8 +445,9 @@ table th {
 
 .post-item {
   padding: 0;
-  margin-bottom: .5rem;
+  margin-bottom: .75rem;
   list-style: none;
+  line-height: 1.5;
 }
 
 .post-item::before {

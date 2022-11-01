@@ -12,4 +12,10 @@ This year I:
 - changed my job.
 - started working 100% remotely from home due to the COVID-19 pandemic.
 - co-organized the first virtual WordPress meetup.
-- `command + c` -> `command + v` -> my lovely son.
+- `MyLovelySon.hello("World")`.
+
+Read others end-of-year reflection posts.
+
+[2019](/posts/2019-year-in-review.html)
+[2018](/posts/2018-year-in-review.html)
+[2017](/posts/2017-year-in-review.html)

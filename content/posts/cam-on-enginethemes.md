@@ -4,6 +4,8 @@ date: 2017-05-31T14:23:39.239Z
 tags: work,enginethemes
 ---
 
+![EngineThemes](https://homecdn.enginethemes.com/wp-content/themes/et_home_new/img/bird-standard-min.png)
+
 EngineThemes (ET) là môi trường làm việc chuyên nghiệp đầu tiên của mình. Đây là nơi giúp mình học hỏi và kinh nghiệm rất nhiều thứ, cũng là nơi mình được làm quen với nhiều người mà cho tới thời điểm này có thể phần nào mối liên hệ đã vượt ngoài giới hạn của công việc.
 
 Mình xem ET như một phần của mình, là cái gì đó mà nó rất trùng hợp trong cuộc sống của mình. Hồi xưa còn năm 3 đại học mình đã vô tình lướt vào trang web của ET, từ lúc đó mình vô cùng ngạc nhiên vì sao ở Việt Nam lại có một team làm theme WordPress chuyên nghiệp như vậy cơ chứ?

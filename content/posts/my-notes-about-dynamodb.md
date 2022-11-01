@@ -25,8 +25,8 @@ Primary key is the unique identifier of an item in a table. The primary key defi
 
 There are two types of primary key: a simple primary key and a composite primary key
 
-- **simple primary key** is as simple as its name. I.e: Order tables with OrderId primary key.
-- **composite primary key** is a combination of partition key and sort key.
+- **Simple primary key** is as simple as its name. I.e: Order tables with OrderId primary key.
+- **Composite primary key** is a combination of partition key and sort key.
 
 ### Partition key, sort key
 

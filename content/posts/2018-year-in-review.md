@@ -12,3 +12,7 @@ tags: recap
 - Tried to sell programing sticker, but it was down 😂
 - Moved 12bit's blog from Medium to Hugo.
 - Less Facebook, more Twitter.
+
+Read others end-of-year reflection posts.
+
+[2017](/posts/2017-year-in-review.html)

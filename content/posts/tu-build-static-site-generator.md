@@ -1,7 +1,7 @@
 ---
-title: Một vài ghi chú khi build static site generator?
+title: Một vài ghi chú khi build static site generator
 date: 2022-01-18T22:25:00.698Z
-tags: go, devlog
+tags: go
 draft: false
 ---
 
@@ -15,9 +15,9 @@ Bên dưới đây là một vài điều mà mình đã học được.
 
 Khi muốn hiển thị danh sách post, tag được sắp xếp theo một thứ tự nào đó, ví dụ theo ngày tháng, tên mình đã tìm hiểu `sort.Sort` trong Golang.
 
-Hàm `Sort` nhận vào data là một `Interface` gồm có 3 methods: `Len`, `Less` và `Swap`. 
+Hàm `Sort` nhận vào data là một `Interface` gồm có 3 methods: `Len`, `Less` và `Swap`.
 
-Vì vậy để sort được một list dữ liệu, mình cần tạo ra một type có 3 method tương ứng.
+Vì vậy để sort được một list dữ liệu, mình cần tạo ra một struct type implement 3 method tương ứng.
 
 ```go
 type TagsByName []Tag
@@ -42,7 +42,7 @@ sortedTags := engine.Tags
 sort.Sort(model.TagsByName(sortedTags))
 ```
 
-### Lắng nghe file change
+### Lắng nghe sự kiện file change
 
 Chúng ta không muốn mỗi lần thay đổi content, html, css thì phải build lại bằng cách chạy lại lệnh build. Thay vào đó mình muốn lắng nghe file change, trigger khi có thay đổi và chạy lại hàm build tự động.
 
