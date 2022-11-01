@@ -37,6 +37,7 @@
   --theme-switch-border-color: #454545;
   --table-border: #e2e8f0;
   --code-block-border: #454545;
+  --bg-footer: #1f1f1f;
 }
 
 :root[data-theme="light"] {
@@ -60,6 +61,7 @@
   --theme-switch-border-color: #b9b9b9;
   --table-border: #e2e8f0;
   --code-block-border: #efefef;
+  --bg-footer: #f4f4f4;
 }
 
 body {
@@ -101,6 +103,14 @@ body {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-extrabold {
+  font-weight: 800;
 }
 
 .text-muted {
@@ -592,6 +602,7 @@ table th {
 .preview img {
   width: 100%;
   height: auto;
+  border-radius: 0;
 }
 
 #reviews {
