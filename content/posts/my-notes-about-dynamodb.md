@@ -5,7 +5,7 @@ tags: dynamodb
 draft: false
 ---
 
-Recently, I have a chance to work with DynamoDB. I find out some interesting stuff about its concept. Especially, **the single table design**.
+Recently, I've had a chance to work with DynamoDB. I found out some interesting stuff about its concept. Especially, **the single table design**.
 
 That means we don't have multiple tables to store our data like relational databases (RDB).
 
