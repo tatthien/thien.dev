@@ -1,7 +1,7 @@
 ---
 title: WordPress, Caddy & Docker
 date: 2022-02-10T09:25:00.698Z
-tags: docker, caddy, wordpress, short
+tags: docker, caddy, wordpress, short, en
 draft: false
 ---
 

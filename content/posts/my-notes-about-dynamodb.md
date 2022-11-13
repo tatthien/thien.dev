@@ -1,7 +1,7 @@
 ---
 title: My notes about DynamoDB
 date: 2022-10-31T09:25:00.698Z
-tags: dynamodb
+tags: dynamodb, en
 draft: false
 ---
 

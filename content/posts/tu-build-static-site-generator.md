@@ -1,7 +1,7 @@
 ---
 title: Một vài ghi chú khi build static site generator
 date: 2022-01-18T22:25:00.698Z
-tags: go
+tags: go, en
 draft: false
 ---
 

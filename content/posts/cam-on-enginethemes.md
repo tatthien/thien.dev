@@ -1,7 +1,7 @@
 ---
 title: Cảm ơn EngineThemes
 date: 2017-05-31T14:23:39.239Z
-tags: work,enginethemes
+tags: work, enginethemes, vi
 ---
 
 ![EngineThemes](https://homecdn.enginethemes.com/wp-content/themes/et_home_new/img/bird-standard-min.png)

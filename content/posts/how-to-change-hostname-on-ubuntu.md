@@ -2,6 +2,7 @@
 title: How to change hostname on Ubuntu?
 date: 2022-05-23T18:41:00Z
 draft: false
+tags: en
 ---
 
 We can simply use the `hostnamectl` command to change hostname.

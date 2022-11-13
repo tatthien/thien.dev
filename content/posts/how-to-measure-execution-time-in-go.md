@@ -2,7 +2,7 @@
 title: How to measure execution time in Go?
 date: 2022-05-25T09:30:13Z
 draft: false
-tags: go
+tags: go, en
 ---
 
 While developing [Giraffe](https://github.com/tatthien/giraffe), I want to measure the execution time of the static files building process.

@@ -2,7 +2,7 @@
 title: Sending command line args to npm script
 date: 2022-05-09T19:20:00Z
 draft: false
-tags: javascript, npm
+tags: javascript, npm, en
 ---
 
 Today I learned how to pass arguments to the npm scripts. My current scripts look like this:

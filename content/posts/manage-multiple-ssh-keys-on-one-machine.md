@@ -2,6 +2,7 @@
 title: Manage multiple SSH keys on one machine
 date: 2022-05-10T23:18:00Z
 draft: false
+tags: en
 ---
 
 Today I got a problem when adding SSH key to my new Gitlab account. I was trying to add a new key, but I got an error `Fingerprint has already been taken`. Gitlab doesn't allow you to add the same key for multiple accounts.

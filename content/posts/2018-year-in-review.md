@@ -2,7 +2,7 @@
 title: 2018 Year in Review
 date: 2018-12-25T13:59:54.829Z
 description: My 2018
-tags: recap
+tags: recap, en
 ---
 
 - Organize the first Vietnam Vue.js meetup.

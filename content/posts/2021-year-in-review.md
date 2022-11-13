@@ -2,7 +2,7 @@
 title: 2021 Year in Review
 date: 2021-12-31T14:23:39.239Z
 description: My 2021
-tags: recap
+tags: recap, en
 ---
 
 The pandemic still hits us hard. The city where I live was locked down for 3 months from July to October.

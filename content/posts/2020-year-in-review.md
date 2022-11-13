@@ -2,7 +2,7 @@
 title: 2020 Year in Review
 date: 2020-12-31T14:23:39.239Z
 description: My 2020
-tags: recap
+tags: recap, en
 ---
 
 This year is such a mind-blowing year. The COVID-19 pandemic changes everything.

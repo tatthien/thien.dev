@@ -2,7 +2,7 @@
 title: How to ensure a type implements an interface in Go?
 date: 2022-09-22T15:23:13Z
 draft: false
-tags: go
+tags: go, en
 ---
 
 ```go
