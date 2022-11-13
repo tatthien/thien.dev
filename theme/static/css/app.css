@@ -273,6 +273,22 @@ body {
   text-decoration: none;
 }
 
+.site-header-nav {
+  margin-right: 2rem;
+}
+
+.site-header-nav a {
+  font-weight: 400;
+  font-size: 0.875rem;
+  margin-right: 1rem;
+  color: var(--c-gray);
+}
+
+.site-header-nav a:hover {
+  text-decoration: underline;
+  color: var(--c-body);
+}
+
 main {
   flex: 1 1 0;
 }
