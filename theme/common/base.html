@@ -102,6 +102,24 @@
         localStorage.setItem('theme', theme)
         reactive.theme = theme
       })
+
+      // Insert year heading to post list
+      let year = ''
+      const postList = document.querySelector('#posts .post-list')
+      const postItems = document.querySelectorAll('#posts .post-item')
+      postItems.forEach(item => {
+        const postDate = item.querySelector('.post-date').textContent
+        itemYear = postDate.split(',')[1].trim()
+        if (year !== itemYear) {
+          year = itemYear
+          const node = document.createElement('h4')
+          node.classList.add('c-gray')
+          node.style.fontWeight = '400'
+          node.style.margin = '1.5rem 0'
+          node.textContent = year
+          postList.insertBefore(node, item)
+        }
+      })
     </script>
   </body>
 
