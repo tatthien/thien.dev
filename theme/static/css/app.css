@@ -738,3 +738,24 @@ table th {
     transform: rotate(360deg);
   }
 }
+
+/** Highlight js **/
+.hljs-focus {
+  display: block;
+  counter-increment: line-code;
+}
+
+.hljs-focus:before {
+  display: inline-block;
+  content: counter(line-code);
+  width: 20px;
+  text-align: right;
+  margin-right: 20px;
+  opacity: .3;
+  font-size: 0.85rem;
+}
+
+
+
+
+

@@ -23,6 +23,21 @@
 </main>
 {{end}}
 {{define "extra_footer"}}
-<script src="/js/hl.js" defer onload="hljs.initHighlightingOnLoad()"></script>
+<script src="/js/hl.js" defer></script>
+<script defer>
+  window.addEventListener('load', () => {
+    hljs.addPlugin({
+      'after:highlight': (result) => {
+        const loc = result.value.split(/\n/)
+        loc.pop() // remove the last redundant line
+        result.value = ''
+        loc.forEach((l, i) => {
+          result.value += `<span class="hljs-focus">${l}</span>`
+        })
+      }
+    })
+    hljs.highlightAll()
+  })
+</script>
 {{end}}
 {{template "base.html" .}}
