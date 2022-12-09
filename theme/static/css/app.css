@@ -357,6 +357,10 @@ ol {
   padding-left: 1rem;
 }
 
+code {
+  font-variant-ligatures: none;
+}
+
 pre {
   padding: .5rem 1rem;
   margin-bottom: 1rem;
@@ -373,6 +377,9 @@ li > code {
   font-weight: 500;
   color: var(--highlight-color);
   background-color: var(--highlight-bg);
+  border: 1px solid var(--code-block-border);
+  border-radius: 4px;
+  padding: 2px 2px 0 2px;
 }
 
 blockquote {
@@ -436,7 +443,6 @@ table th {
   margin-top: 2rem;
   font-size: var(--font-size-sm);
   color: var(--c-gray);
-  text-align: center;
 }
 
 .site-footer a {
