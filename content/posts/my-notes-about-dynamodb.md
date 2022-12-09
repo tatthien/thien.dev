@@ -35,7 +35,7 @@ These keys must be defined at the creation of a table.
 - **Partition key (PK)** is use to partitioning the data.
 - **Sort key (SK)** is used to determine the order of how data with the same partition key is stored.
 
-_In DynamoDB, we can name partition key and sort key by whatever name we favor. I.e: Username, email, created date, artist or song title. However, I see the name PK and SK are the most popular, artist or song title_
+> In DynamoDB, we can name partition key and sort key by whatever name we favor. I.e: Username, email, created date, artist or song title. However, I see the name PK and SK are the most popular, artist or song title
 
 Let's take an example to see how PK and SK work. Suppose I'm storing the data of an application's extensions that contain metadata, versions, etc. This is how I structure the data in DynamoDB.
 

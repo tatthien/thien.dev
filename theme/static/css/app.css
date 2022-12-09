@@ -392,7 +392,7 @@ blockquote {
 
 @media all and (min-width: 768px) {
   blockquote {
-    padding: 1rem 3rem;
+    padding: 2.5rem 3rem;
     font-size: 1.75rem;
     line-height: 3rem;
   }
@@ -423,6 +423,10 @@ table th {
   padding: 0.25rem 0.5rem;
   border-right: 1px solid var(--table-border);
   border-bottom: 1px solid var(--table-border);
+}
+
+.post-content h2 {
+  margin-top: 3.5rem;
 }
 
 .post-title {

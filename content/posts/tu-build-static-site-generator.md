@@ -11,7 +11,7 @@ Static site generator (SSG) không phải còn xa lạ nữa. Đã có rất nhi
 
 Bên dưới đây là một vài điều mà mình đã học được.
 
-### Sort
+## Sorting
 
 Khi muốn hiển thị danh sách post, tag được sắp xếp theo một thứ tự nào đó, ví dụ theo ngày tháng, tên mình đã tìm hiểu `sort.Sort` trong Golang.
 
@@ -42,7 +42,7 @@ sortedTags := engine.Tags
 sort.Sort(model.TagsByName(sortedTags))
 ```
 
-### Lắng nghe sự kiện file change
+## Lắng nghe sự kiện file change
 
 Chúng ta không muốn mỗi lần thay đổi content, html, css thì phải build lại bằng cách chạy lại lệnh build. Thay vào đó mình muốn lắng nghe file change, trigger khi có thay đổi và chạy lại hàm build tự động.
 
@@ -100,7 +100,7 @@ go func() {
 
 Nhưng vậy mỗi lần có sự thay đổi nội dung file hoặc thêm, xóa file thì SSG sẽ tự động build lại để hiển thị nội dung mới nhất.
 
-### Sử dụng template
+## Sử dụng template
 
 Để có thể render data thành cách file html, mình sẽ sử dụng [template](https://golang.org/pkg/text/template/).
 

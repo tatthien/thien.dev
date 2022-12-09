@@ -1,11 +1,13 @@
 ---
-title: Go for select
+title: "Select statement in Golang"
 date: 2022-12-08T21:30:00Z
 draft: false
-tags: en
+tags: go, en
 ---
 
-A code example that shows how `for...select` works in Golang:
+A code example that shows how `select` works in Golang:
+
+
 
 ```go
 package main
