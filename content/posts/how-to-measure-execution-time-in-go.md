@@ -1,5 +1,5 @@
 ---
-title: How to measure execution time in Go?
+title: How to measure execution time in Golang?
 date: 2022-05-25T09:30:13Z
 draft: false
 tags: go, en

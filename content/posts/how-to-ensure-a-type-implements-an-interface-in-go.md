@@ -1,5 +1,5 @@
 ---
-title: How to ensure a type implements an interface in Go?
+title: How to ensure a type implements an interface in Golang?
 date: 2022-09-22T15:23:13Z
 draft: false
 tags: go, en
@@ -46,7 +46,7 @@ cannot use (*Rectangle)(nil) (value of type *Rectangle) as type Shape in variabl
 	*Rectangle does not implement Shape (missing Area method)
 ```
 
-Implementing the interface gets rid of the compilerrr error
+Implementing the interface gets rid of the compile error
 
 ```go
 package main
