@@ -2,7 +2,7 @@
 title: AWS EKS + Kubeconfig
 date: 2022-12-13T09:30:13Z
 draft: false
-tags: k8s, aws, eks
+tags: k8s, aws, eks, en
 ---
 
 ## Update kubeconfig
@@ -11,7 +11,9 @@ Create kube config file using `aws eks update-kubeconfig`. Make sure to define t
 
 ```bash
 KUBECONFIG=/path/to/config \
-aws eks update-kubeconfig --region <region> --name <cluster-name>
+aws eks update-kubeconfig \
+--region <region> \
+--name <cluster-name>
 ```
 
 If you successfully update the config, you will see a output log like this:
