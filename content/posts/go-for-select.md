@@ -5,9 +5,7 @@ draft: false
 tags: go, en
 ---
 
-A code example that shows how `select` works in Golang:
-
-
+An example code snippet that shows how `select` works in Golang:
 
 ```go
 package main
