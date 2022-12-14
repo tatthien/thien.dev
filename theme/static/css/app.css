@@ -9,7 +9,7 @@
 }
 
 :root {
-  --container-w: 750px;
+  --container-w: 640px;
   --font-size-sm: .875rem;
   --font-mono: "Overpass Mono", monospace;
   --font-primary: "Manrope", sans-serif;
@@ -362,7 +362,7 @@ code {
 }
 
 pre {
-  padding: .5rem 1rem;
+  padding: .5rem;
   margin-bottom: 1rem;
   overflow-x: auto;
   background: var(--highlight-bg);
@@ -426,7 +426,18 @@ table th {
 }
 
 .post-content h2 {
-  margin-top: 3.5rem;
+  margin-top: 3rem;
+  counter-increment: h2counter;
+}
+
+.post-content h2:before {
+  content: counter(h2counter) ". ";
+  color: var(--c-gray);
+}
+
+.post-content h3:before {
+  content: '# ';
+  color: var(--c-gray);
 }
 
 .post-title {
@@ -758,7 +769,6 @@ table th {
   font-size: 0.85rem;
 }
 
-
-
-
-
+.single .post-title {
+  margin-bottom: 3.5rem;
+}
