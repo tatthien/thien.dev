@@ -1,5 +1,5 @@
 ---
-title: 2022: A year in Review
+title: "2022: A year in Review"
 date: 2022-12-31T19:09:39.239Z
 description: My 2022
 tags: recap, en
