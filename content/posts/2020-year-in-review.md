@@ -14,8 +14,6 @@ This year I:
 - co-organized the first virtual WordPress meetup.
 - `MyLovelySon.hello("World")`.
 
-Read others end-of-year reflection posts.
+Read my "A year in review" series.
 
-[2019](/posts/2019-year-in-review.html)
-[2018](/posts/2018-year-in-review.html)
-[2017](/posts/2017-year-in-review.html)
+[2019](/posts/2019-year-in-review.html) [2018](/posts/2018-year-in-review.html) [2017](/posts/2017-year-in-review.html)

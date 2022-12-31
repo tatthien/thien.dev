@@ -16,9 +16,6 @@ This year I:
 
 These are the remarkable things that happened this year. Hopefully, 2022 will be a better year.
 
-Read others end-of-year reflection posts.
+Read my "A year in review" series.
 
-[2020](/posts/2020-year-in-review.html)
-[2019](/posts/2019-year-in-review.html)
-[2018](/posts/2018-year-in-review.html)
-[2017](/posts/2017-year-in-review.html)
+[2020](/posts/2020-year-in-review.html) [2019](/posts/2019-year-in-review.html) [2018](/posts/2018-year-in-review.html) [2017](/posts/2017-year-in-review.html)

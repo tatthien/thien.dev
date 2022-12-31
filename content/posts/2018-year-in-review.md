@@ -13,6 +13,6 @@ tags: recap, en
 - Moved 12bit's blog from Medium to Hugo.
 - Less Facebook, more Twitter.
 
-Read others end-of-year reflection posts.
+Read my "A year in review" series.
 
 [2017](/posts/2017-year-in-review.html)

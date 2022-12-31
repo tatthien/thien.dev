@@ -18,7 +18,6 @@ The items above are the main events/things in 2019, I think.
 
 I'm excited to wait for my new job at P in Feb and my baby comes into the world in July.
 
-Read others end-of-year reflection posts.
+Read my "A year in review" series.
 
-[2018](/posts/2018-year-in-review.html)
-[2017](/posts/2017-year-in-review.html)
+[2018](/posts/2018-year-in-review.html) [2017](/posts/2017-year-in-review.html)
