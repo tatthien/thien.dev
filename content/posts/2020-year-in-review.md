@@ -1,5 +1,5 @@
 ---
-title: 2020 Year in Review
+title: "2020: A year in review"
 date: 2020-12-31T14:23:39.239Z
 description: My 2020
 tags: recap, en

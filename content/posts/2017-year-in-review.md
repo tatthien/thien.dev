@@ -1,5 +1,5 @@
 ---
-title: 2017 Year in Review
+title: "2017: A year in review"
 date: 2017-12-31T13:57:17.228Z
 description: My 2017
 tags: recap, en
