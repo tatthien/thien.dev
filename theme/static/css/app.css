@@ -72,10 +72,12 @@
 
 :root[data-theme="light"] ninja-keys {
   --ninja-accent-color: #151515;
+  --ninja-text-color: #151515;
 }
 
 :root[data-theme="dark"] ninja-keys {
   --ninja-accent-color: #151515;
+  --ninja-text-color: #151515;
 }
 
 body {
@@ -325,6 +327,10 @@ body {
   border: 1px solid var(--kbar-button-keys-border);
   border-radius: 4px;
   padding: 0 0.25rem;
+}
+
+.kbar-button:hover {
+  border-color: var(--c-primary);
 }
 
 .kbar-button:hover .kbar-button-placeholder {
