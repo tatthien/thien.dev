@@ -9,7 +9,7 @@
 }
 
 :root {
-  --container-w: 640px;
+  --container-w: 700px;
   --font-size-sm: .875rem;
   --font-mono: "Overpass Mono", monospace;
   --font-primary: "Manrope", sans-serif;
@@ -39,6 +39,8 @@
   --code-block-border: #454545;
   --bg-footer: #1f1f1f;
   --bg-header: rgba(21,21,21, .8);
+  --kbar-button-bg: rgba(255,255,255,.05);
+  --kbar-button-keys-border: rgba(255,255,255,.2);
 }
 
 :root[data-theme="light"] {
@@ -64,6 +66,16 @@
   --code-block-border: #efefef;
   --bg-footer: #f4f4f4;
   --bg-header: rgba(255,255,255, .6);
+  --kbar-button-bg: rgba(0,0,0,.05);
+  --kbar-button-keys-border: rgba(0,0,0,.2);
+}
+
+:root[data-theme="light"] ninja-keys {
+  --ninja-accent-color: #151515;
+}
+
+:root[data-theme="dark"] ninja-keys {
+  --ninja-accent-color: #151515;
 }
 
 body {
@@ -145,6 +157,10 @@ body {
 
 .mb-8 {
   margin-bottom: 2rem;
+}
+
+.mr-2 {
+  margin-right: .5rem;
 }
 
 .py-4 {
@@ -259,7 +275,7 @@ body {
   -webkit-backdrop-filter: blur(40px);
   backdrop-filter: blur(40px);
   background: var(--bg-header);
-  z-index: 99;
+  z-index: 1;
 }
 
 .site-header a {
@@ -274,18 +290,44 @@ body {
 }
 
 .site-header-nav {
-  margin-right: 2rem;
+  margin-right: 1rem;
 }
 
 .site-header-nav a {
   font-weight: 400;
   font-size: 0.875rem;
-  margin-right: 1rem;
   color: var(--c-gray);
+}
+
+.site-header-nav > * {
+  margin-right: 1rem;
 }
 
 .site-header-nav a:hover {
   text-decoration: underline;
+  color: var(--c-body);
+}
+
+.kbar-button {
+  border-radius: 4px;
+  border: 1px solid transparent;
+  background: var(--kbar-button-bg);
+  font-size: 0.875rem;
+  color: var(--c-gray);
+  padding: 0.25rem 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.kbar-button-keys {
+  border: 1px solid var(--kbar-button-keys-border);
+  border-radius: 4px;
+  padding: 0 0.25rem;
+}
+
+.kbar-button:hover .kbar-button-placeholder {
   color: var(--c-body);
 }
 
@@ -771,4 +813,9 @@ table th {
 
 .single .post-title {
   margin-bottom: 3.5rem;
+}
+
+#hero p {
+  font-size: calc(16px + 1.8vw);
+  line-height: calc(18px + 2.2vw);
 }
