@@ -808,12 +808,12 @@ table th {
 }
 
 /** Highlight js **/
-.hljs-focus {
+.hljs-line {
   display: block;
   counter-increment: line-code;
 }
 
-.hljs-focus:before {
+.hljs-line:before {
   display: inline-block;
   content: counter(line-code);
   width: 20px;
