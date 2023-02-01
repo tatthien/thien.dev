@@ -562,15 +562,20 @@ table th {
 
 .post-tags {
   display: inline-flex;
-  gap: .25rem;
+  gap: .5rem;
 }
 
-.post-tags span::after {
-  content: "•";
+.post-tags a {
+  border: 1px solid var(--c-gray);
+  color: var(--c-gray);
+  border-radius: .25rem;
+  padding: .125rem .5rem;
 }
 
-.post-tags span:last-child::after {
-  content: "";
+.post-tags a:hover {
+  text-decoration: none;
+  color: var(--c-primary);
+  border-color: var(--c-primary);
 }
 
 /** Theme Switcher **/
@@ -622,6 +627,10 @@ table th {
   opacity: 0;
 }
 
+#hero p {
+  font-size: calc(16px + 1.8vw);
+}
+
 @media all and (min-width: 768px) {
   .cp_embed_wrapper { /* stylelint-disable-line */
     margin-right: -5vw;
@@ -640,6 +649,7 @@ table th {
   }
   #hero p {
     margin: 0;
+    line-height: calc(18px + 2.2vw);
   }
 
   .post-date {
@@ -827,7 +837,3 @@ table th {
   margin-bottom: 3.5rem;
 }
 
-#hero p {
-  font-size: calc(16px + 1.8vw);
-  line-height: calc(18px + 2.2vw);
-}
