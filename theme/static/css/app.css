@@ -280,6 +280,12 @@ body {
   z-index: 1;
 }
 
+@media all and (min-width: 768px) {
+  .site-header {
+    padding: .5rem 4rem;
+  }
+}
+
 .site-header a {
   font-size: 1rem;
   color: var(--c-body);

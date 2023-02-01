@@ -40,7 +40,7 @@
 
   <body>
     <div class="_giraffe">
-      <div class="site-header container">
+      <div class="site-header">
         <a href="/">> thien.dev</a>
         <div class="flex items-center">
           <nav class="site-header-nav">
@@ -80,10 +80,13 @@
     </div>
 
     {{template "extra_footer" .}}
-    <!-- Quicklink -->
     <script src="https://unpkg.com/quicklink@2.2.0/dist/quicklink.umd.js"></script>
     <script type="module" src="https://unpkg.com/ninja-keys?module"></script>
-    
+    <script id="giraffe-global">
+    var __GIRAFFE__ = {
+      config: {{ .Site }}
+    }
+    </script>
     <script>
       // Quicklink
       quicklink.listen()
