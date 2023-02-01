@@ -14,7 +14,7 @@ jobs:
 
       - name: Generate
         run: |
-          curl -L https://github.com/tatthien/giraffe/releases/download/v0.11.0/giraffe_0.11.0_linux_amd64.tar.gz | tar xvz
+          curl -L https://github.com/tatthien/giraffe/releases/download/v0.12.0/giraffe_0.12.0_linux_amd64.tar.gz | tar xvz
           ./giraffe
 
       - name: Deploy
