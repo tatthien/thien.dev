@@ -17,17 +17,6 @@ jobs:
           curl -L https://github.com/tatthien/giraffe/releases/download/v0.13.1/giraffe_Linux_x86_64.tar.gz | tar xvz
           ./giraffe
 
-      - name: Deploy
-        uses: nwtgck/actions-netlify@v1.2.3
-        with:
-          publish-dir: "./dist"
-          production-deploy: true
-          netlify-config-path: ./netlify.toml
-        env:
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-        timeout-minutes: 1
-
       - name: Deploy on Vercel
         uses: amondnet/vercel-action@v20
         with:
