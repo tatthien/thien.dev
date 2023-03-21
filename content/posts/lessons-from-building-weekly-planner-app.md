@@ -103,7 +103,7 @@ In this case, the modal's button and the modal itself live within the same compo
 Let's use `<Teleport>` to fix that issue:
 
 
-```
+```js
 <template>
   <button @click="open = true">Open modal</button>
 
@@ -120,22 +120,22 @@ Here, we are telling Vue to move the modal to the `body` tag. You can open the d
 
 Using `<Teleport>`:
 
-```
-body
-  #app
-    div
-      button
-  div.modal
+```bash
+body          
+| #app        
+| | div       
+| | | button  
+| div.modal   
 ```
 
 Not using `<Teleport>`:
 
-```
-body
-  #app
-    div
-      button
-      div.modal
+```bash
+body              
+| #app            
+| | div           
+| | | button      
+| | | div.modal   
 ```
 
 ## HSL color model
