@@ -574,6 +574,7 @@ table th {
 
 .post-tags {
   display: inline-flex;
+  flex-wrap: wrap;
   gap: 0.5rem;
 }
 
@@ -582,6 +583,8 @@ table th {
   color: var(--c-gray);
   border-radius: 0.25rem;
   padding: 0.125rem 0.5rem;
+  display: inline-flex;
+  line-height: 1.5;
 }
 
 .post-tags a:hover {
