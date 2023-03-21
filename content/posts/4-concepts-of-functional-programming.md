@@ -5,6 +5,10 @@ description: A part of learning functional programming
 tags: functional programming
 ---
 
+<div class="expanded-img">
+<img alt="Featured image" src="/img/4-concepts-of-functional-programming/featured.webp" />
+</div>
+
 Today I spent my spare time learning about functional programming. Here are 4 concepts of that paradigm.
 
 - Pure functions and idempotent
