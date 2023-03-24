@@ -1,18 +1,10 @@
 @import "reset.css";
 
-@font-face {
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 100 900;
-  src: url("/fonts/Manrope[wght].woff2") format("woff2");
-  font-display: swap;
-}
-
 :root {
   --container-w: 700px;
   --font-size-sm: 0.875rem;
   --font-mono: "Overpass Mono", monospace;
-  --font-primary: "Manrope", sans-serif;
+  --font-primary: "IBM Plex Sans", sans-serif;
   --font-serif: "Literata", serif;
 }
 
@@ -84,7 +76,7 @@ body {
   min-height: 100vh;
   font-family: var(--font-primary);
   font-size: 18px;
-  line-height: 32px;
+  line-height: 1.6;
   color: var(--c-body);
   background: var(--bg);
 }
@@ -496,7 +488,10 @@ table th {
 }
 
 .post-title {
-  font-weight: 800;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 52px;
+  text-align: center;
 }
 
 .post-content a {

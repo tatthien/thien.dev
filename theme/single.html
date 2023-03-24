@@ -1,43 +1,37 @@
 {{define "extra_head"}}
-<link rel="stylesheet" href="/css/hl.css">
-{{end}}
-{{define "content"}}
+<link rel="stylesheet" href="/css/hl.css" />
+{{end}} {{define "content"}}
 <main class="container single">
-    <div class="mb-8">
-        <a href="/{{.Post.Type}}" class="c-gray"><- All posts</a>
-    </div>
-    <div>
-        <h1 class="post-title">{{.Post.Title}}</h1>
-        <div class="post-content">{{safe_html .Post.Content}}</div>
-    </div>
+  <div>
+    <h1 class="post-title">{{.Post.Title}}</h1>
+    <div class="post-content">{{safe_html .Post.Content}}</div>
     <div class="post-meta">
-        <div class="mb-2">{{.Post.Date.Format "Jan 2, 2006"}}</div>
-        <nav class="post-tags">
-            {{range .Post.Tags}}
-            <span>
-                <a href="/tags/{{slugify .}}.html">{{.}}</a>
-            </span>
-            {{end}}
-        </nav>
+      <div class="mb-2">{{.Post.Date.Format "Jan 2, 2006"}}</div>
+      <nav class="post-tags">
+        {{range .Post.Tags}}
+        <span>
+          <a href="/tags/{{slugify .}}.html">{{.}}</a>
+        </span>
+        {{end}}
+      </nav>
     </div>
+  </div>
 </main>
-{{end}}
-{{define "extra_footer"}}
+{{end}} {{define "extra_footer"}}
 <script src="/js/hl.js" defer></script>
 <script defer>
-  window.addEventListener('load', () => {
+  window.addEventListener("load", () => {
     hljs.addPlugin({
-      'after:highlight': (result) => {
-        const loc = result.value.split(/\n/)
-        loc.pop() // remove the last redundant line
-        result.value = ''
+      "after:highlight": (result) => {
+        const loc = result.value.split(/\n/);
+        loc.pop(); // remove the last redundant line
+        result.value = "";
         loc.forEach((l, i) => {
-          result.value += `<span class="hljs-line">${l}</span>`
-        })
-      }
-    })
-    hljs.highlightAll()
-  })
+          result.value += `<span class="hljs-line">${l}</span>`;
+        });
+      },
+    });
+    hljs.highlightAll();
+  });
 </script>
-{{end}}
-{{template "base.html" .}}
+{{end}} {{template "base.html" .}}
