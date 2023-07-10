@@ -4,7 +4,7 @@
   --container-w: 700px;
   --font-size-sm: 0.875rem;
   --font-mono: "Overpass Mono", monospace;
-  --font-primary: "IBM Plex Sans", sans-serif;
+  --font-primary: system-ui;
   --font-serif: "Literata", serif;
 }
 
@@ -273,12 +273,6 @@ body {
   z-index: 1;
 }
 
-@media all and (min-width: 768px) {
-  .site-header {
-    padding: 0.5rem 4rem;
-  }
-}
-
 .site-header a {
   font-size: 1rem;
   color: var(--c-body);
@@ -309,33 +303,6 @@ body {
   color: var(--c-body);
 }
 
-.kbar-button {
-  border-radius: 4px;
-  border: 1px solid transparent;
-  background: var(--kbar-button-bg);
-  font-size: 0.875rem;
-  color: var(--c-gray);
-  padding: 0.25rem 0.5rem;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  cursor: pointer;
-}
-
-.kbar-button-keys {
-  border: 1px solid var(--kbar-button-keys-border);
-  border-radius: 4px;
-  padding: 0 0.25rem;
-}
-
-.kbar-button:hover {
-  border-color: var(--c-primary);
-}
-
-.kbar-button:hover .kbar-button-placeholder {
-  color: var(--c-body);
-}
-
 main {
   flex: 1 1 0;
 }
@@ -352,6 +319,10 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+strong {
+  font-weight: 600;
 }
 
 [target="_blank"]::after {
@@ -637,10 +608,6 @@ table th {
   opacity: 0;
 }
 
-#hero p {
-  font-size: calc(16px + 1.8vw);
-}
-
 @media all and (min-width: 768px) {
   .cp_embed_wrapper {
     /* stylelint-disable-line */
@@ -657,10 +624,6 @@ table th {
     flex-shrink: 0;
     position: relative;
     top: -10px;
-  }
-  #hero p {
-    margin: 0;
-    line-height: calc(18px + 2.2vw);
   }
 
   .post-date {
@@ -845,5 +808,6 @@ table th {
 }
 
 .single .post-title {
+  margin-top: 2.5rem;
   margin-bottom: 3.5rem;
 }
