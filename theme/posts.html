@@ -1,21 +1,19 @@
-{{define "extra_head"}}{{end}}
-{{define "content"}}
+{{define "extra_head"}}{{end}} {{define "content"}}
 <main>
-  <section id="posts" class="container">
+  <section class="container">
     <h2 class="mb-1">📝 Posts</h2>
     <div class="mb-4 c-gray">My random thoughts, notes and short stories.</div>
+  </section>
+  <div class="divider"></div>
+  <section id="posts" class="container">
     <ul class="post-list">
       {{range .Posts}}
       <li class="post-item">
         <span class="post-date">{{ .Date.Format "02-01-2006" }}</span>
-        <a href="{{.Permarlink}}">{{.Title}}</a> 
+        <a href="{{.Permarlink}}">{{.Title}}</a>
       </li>
       {{end}}
     </ul>
   </section>
 </main>
-{{end}}
-
-{{define "extra_footer"}}{{end}}
-
-{{template "base.html" .}}
+{{end}} {{define "extra_footer"}}{{end}} {{template "base.html" .}}

@@ -13,6 +13,7 @@
   --bg: #151515;
   --c-body: #fafafa;
   --c-gray: #8c8c8c;
+  --c-divider: #3b3b3c;
   --highlight-color: #fff;
   --highlight-bg: #1c1b1b;
   --highlight-comment: #999;
@@ -40,6 +41,7 @@
   --bg: #fff;
   --c-body: #151515;
   --c-gray: #8c8c8c;
+  --c-divider: #e4e4e4;
   --highlight-color: #2f3337;
   --highlight-bg: #f6f6f6;
   --highlight-comment: #656e77;
@@ -326,8 +328,29 @@ strong {
 }
 
 .divider {
-  border-bottom: 1px solid var(--table-border);
+  border-bottom: 1px solid var(--c-divider);
   margin: 2.5rem 0;
+}
+
+.border-v {
+  --gutter: 1rem;
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: var(--c-divider);
+  z-index: 9999;
+}
+
+.border-v-l {
+  left: calc((100vw - 700px) / 2 - var(--gutter));
+}
+
+@media all and (min-width: 768px) {
+  .border-v {
+    display: block;
+  }
 }
 
 [target="_blank"]::after {
@@ -467,7 +490,6 @@ table th {
   font-weight: 600;
   font-size: 48px;
   line-height: 52px;
-  text-align: center;
 }
 
 .post-content a {

@@ -48,7 +48,7 @@
 
   <body>
     <div class="_giraffe">
-      <div class="site-header">
+      <header class="site-header">
         <div class="container flex items-center justify-between">
           <a href="/">> thien.dev</a>
           <div class="flex items-center">
@@ -111,7 +111,7 @@
             </label>
           </div>
         </div>
-      </div>
+      </header>
 
       {{template "content" .}}
 
@@ -125,6 +125,8 @@
           >
         </nav>
       </footer>
+
+      <div class="border-v border-v-l"></div>
     </div>
 
     {{template "extra_footer" .}}

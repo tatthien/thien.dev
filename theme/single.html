@@ -1,9 +1,12 @@
 {{define "extra_head"}}
 <link rel="stylesheet" href="/css/hl.css" />
 {{end}} {{define "content"}}
-<main class="container single">
-  <div>
+<main class="single">
+  <section class="container">
     <h1 class="post-title">{{.Post.Title}}</h1>
+  </section>
+  <div class="divider"></div>
+  <section class="container">
     <div class="post-content">{{safe_html .Post.Content}}</div>
     <div class="post-meta">
       <div class="mb-2">{{.Post.Date.Format "Jan 2, 2006"}}</div>
@@ -15,7 +18,7 @@
         {{end}}
       </nav>
     </div>
-  </div>
+  </section>
 </main>
 {{end}} {{define "extra_footer"}}
 <script src="/js/hl.js" defer></script>

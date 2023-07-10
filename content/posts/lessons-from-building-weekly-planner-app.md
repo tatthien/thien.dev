@@ -5,7 +5,7 @@ draft: false
 tags: vue, supabase, planner, to-do, build in public
 ---
 
-<div class="expanded-img">
+<div class="mb-4">
 <img src="/img/lessons-from-building-weekly-planner-app/featured.webp">
 </div>
 

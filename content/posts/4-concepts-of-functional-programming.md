@@ -5,7 +5,7 @@ description: A part of learning functional programming
 tags: functional programming
 ---
 
-<div class="expanded-img">
+<div class="mb-4">
 <img alt="Featured image" src="/img/4-concepts-of-functional-programming/featured.webp" />
 </div>
 
