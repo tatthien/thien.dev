@@ -6,7 +6,10 @@
     <h1 class="post-title">{{.Post.Title}}</h1>
   </section>
   <div class="divider"></div>
-  <section class="container">
+  <section class="relative container">
+    <aside class="sidebar">
+      <nav class="toc"></nav>
+    </aside>
     <div class="post-content">{{safe_html .Post.Content}}</div>
     <div class="post-meta">
       <div class="mb-2">{{.Post.Date.Format "Jan 2, 2006"}}</div>
@@ -24,6 +27,17 @@
 <script src="/js/hl.js" defer></script>
 <script defer>
   window.addEventListener("load", () => {
+    // TOC
+    const h2 = document.querySelectorAll("h2");
+    const tocEl = document.querySelector(".toc");
+    h2.forEach((el) => {
+      const a = `<a href="#${el.getAttribute("id")}" data-id="${el.getAttribute(
+        "id"
+      )}" title="${el.textContent}">${el.textContent}</a>`;
+      tocEl.innerHTML += a;
+    });
+
+    // Highlight.js
     hljs.addPlugin({
       "after:highlight": (result) => {
         const loc = result.value.split(/\n/);

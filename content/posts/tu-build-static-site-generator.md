@@ -42,7 +42,7 @@ sortedTags := engine.Tags
 sort.Sort(model.TagsByName(sortedTags))
 ```
 
-## Lắng nghe sự kiện file change
+## File change events
 
 Chúng ta không muốn mỗi lần thay đổi content, html, css thì phải build lại bằng cách chạy lại lệnh build. Thay vào đó mình muốn lắng nghe file change, trigger khi có thay đổi và chạy lại hàm build tự động.
 
