@@ -83,7 +83,7 @@ body {
   background: var(--bg);
 }
 
-*:focus {
+*:focus-visible {
   outline: dotted var(--c-primary);
 }
 
