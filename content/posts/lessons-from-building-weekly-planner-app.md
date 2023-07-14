@@ -52,7 +52,7 @@ supabase.auth.onAuthStateChange((event, session) => {
 
 Using Tailwind Just-in-time allows you to generate styles on-demand. What is generating styles on-demand?
 
-By default, Tailwind comes with the default utility classes such as `mt-1, flex, grid, border, rounded,...`. However, if you want to have custom CSS rules? There are 2 ways: define your custom rules in `tailwind.config.js`, the second way is to use `JIT` mode. 
+By default, Tailwind comes with the default utility classes such as `mt-1`, `flex`, `grid`, `border`, `rounded`. However, if you want to have custom CSS rules? There are 2 ways: define your custom rules in `tailwind.config.js`, the second way is to use `JIT` mode. 
 
 For example:
 

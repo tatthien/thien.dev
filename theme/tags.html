@@ -1,17 +1,25 @@
-{{define "extra_head"}}{{end}}
-{{define "content"}}
-<main class="container">
+{{define "extra_head"}}
+<style>
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+</style>
+{{end}} {{define "content"}}
+<main>
+  <div class="container">
     <h1>Tags</h1>
+  </div>
+  <div class="divider"></div>
+  <div class="container">
     <nav>
-        {{range .Tags}}
-        <div>
-            <a href="{{.Permalink}}">{{.Name}}</a>
-        </div>
-        {{end}}
+      {{range .Tags}}
+      <div>
+        <a href="{{.Permalink}}">{{.Name}}</a>
+      </div>
+      {{end}}
     </nav>
+  </div>
 </main>
-{{end}}
-
-{{define "extra_footer"}}{{end}}
-
-{{template "base.html" .}}
+{{end}} {{define "extra_footer"}}{{end}} {{template "base.html" .}}

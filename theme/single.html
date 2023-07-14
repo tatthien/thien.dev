@@ -4,6 +4,7 @@
 <main class="single">
   <section class="container">
     <h1 class="post-title">{{.Post.Title}}</h1>
+    <div class="c-gray">{{.Post.Date.Format "Jan 2, 2006"}}</div>
   </section>
   <div class="divider"></div>
   <section class="relative container">
@@ -12,7 +13,6 @@
     </aside>
     <div class="post-content">{{safe_html .Post.Content}}</div>
     <div class="post-meta">
-      <div class="mb-2">{{.Post.Date.Format "Jan 2, 2006"}}</div>
       <nav class="post-tags">
         {{range .Post.Tags}}
         <span>

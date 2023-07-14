@@ -3,13 +3,13 @@
 :root {
   --container-w: 700px;
   --font-size-sm: 0.875rem;
-  --font-mono: "Overpass Mono", monospace;
+  --font-mono: "Cousine", monospace;
   --font-primary: system-ui;
   --font-serif: "Literata", serif;
 }
 
 :root[data-theme="dark"] {
-  --c-primary: #fafafa;
+  --c-primary: #349dff;
   --bg: #151515;
   --c-body: #fafafa;
   --c-gray: #8c8c8c;
@@ -37,7 +37,7 @@
 }
 
 :root[data-theme="light"] {
-  --c-primary: #151515;
+  --c-primary: #006fd6;
   --bg: #fff;
   --c-body: #151515;
   --c-gray: #8c8c8c;
@@ -385,20 +385,20 @@ h1 {
 
 ol,
 ul {
-  padding: 0;
-  margin: 0 0 1.25rem 1.25rem;
+  padding: 0 0 0 1rem;
+  margin: 0 0 1rem 0;
 }
 
 ul li {
   position: relative;
-  padding-left: 0.75rem;
+  padding-left: 0.875rem;
   list-style: none;
 }
 
 ul li::before {
   position: absolute;
   left: 0;
-  content: "-";
+  content: "\2022";
 }
 
 ol {
@@ -422,27 +422,18 @@ pre {
 
 p > code,
 li > code {
-  font-weight: 500;
-  color: var(--highlight-color);
-  background-color: var(--highlight-bg);
-  border: 1px solid var(--code-block-border);
-  border-radius: 4px;
-  padding: 2px 2px 0 2px;
+  color: var(--highlight-namespace);
 }
 
 blockquote {
   padding: 1rem 1.5rem;
   margin-bottom: 1rem;
-  font-size: 1.5rem;
-  line-height: 2rem;
   color: var(--c-gray);
 }
 
 @media all and (min-width: 768px) {
   blockquote {
     padding: 2.5rem 3rem;
-    font-size: 1.75rem;
-    line-height: 3rem;
   }
 }
 
@@ -483,19 +474,10 @@ table th {
   color: var(--c-gray);
 }
 
-.post-content h3:before {
-  content: "# ";
-  color: var(--c-gray);
-}
-
 .post-title {
   font-weight: 600;
   font-size: 48px;
   line-height: 52px;
-}
-
-.post-content a {
-  text-decoration: underline;
 }
 
 .post-content .expanded-img {
@@ -546,7 +528,7 @@ table th {
 }
 
 .post-item a {
-  color: var(--c-primary);
+  color: var(--c-body);
 }
 
 .post-item div {
@@ -569,22 +551,11 @@ table th {
 .post-tags {
   display: inline-flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 0.75rem;
 }
 
 .post-tags a {
-  border: 1px solid var(--c-gray);
-  color: var(--c-gray);
-  border-radius: 0.25rem;
-  padding: 0.125rem 0.5rem;
   display: inline-flex;
-  line-height: 1.5;
-}
-
-.post-tags a:hover {
-  text-decoration: none;
-  color: var(--c-primary);
-  border-color: var(--c-primary);
 }
 
 /** Theme Switcher **/
@@ -836,7 +807,7 @@ table th {
 
 .single .post-title {
   margin-top: 2.5rem;
-  margin-bottom: 3.5rem;
+  margin-bottom: 1rem;
 }
 
 .single .sidebar {
@@ -856,7 +827,7 @@ table th {
 
 .toc a {
   display: block;
-  font-size: 0.875rem;
+  font-size: var(--font-size-sm);
   color: var(--c-gray);
   text-overflow: ellipsis;
   overflow: hidden;
