@@ -37,6 +37,32 @@
       tocEl.innerHTML += a;
     });
 
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const tocLinks = document.querySelectorAll(".toc a");
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            tocLinks.forEach((a) => {
+              a.classList.remove("active");
+            });
+            const tocLink = document.querySelector(
+              `.toc a[href='#${entry.target.id}']`
+            );
+            tocLink.classList.add("active");
+          }
+        });
+      },
+      {
+        root: null,
+        rootMargin: "-100px",
+        threshold: 1,
+      }
+    );
+
+    h2.forEach((el) => {
+      observer.observe(el);
+    });
+
     // Highlight.js
     hljs.addPlugin({
       "after:highlight": (result) => {

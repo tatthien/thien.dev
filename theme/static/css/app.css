@@ -861,4 +861,9 @@ table th {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  transition: all 0.3s ease-in-out;
+}
+
+.toc a.active {
+  color: var(--c-body);
 }
