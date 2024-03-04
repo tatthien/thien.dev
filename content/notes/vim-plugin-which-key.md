@@ -5,7 +5,7 @@ description: WhichKey is a lua plugin for Neovim 0.5 that displays a popup with 
 tags: vim
 ---
 
-Vim/Neovim is a keyboard-driven IDE, which means you can code efficiently without needing to switch between your keyboard and your mouse. This is where key bindings beecome invaluable, significantly enhancing productivity.
+Vim/Neovim is a keyboard-driven IDE, which means you can code efficiently without needing to switch between your keyboard and your mouse. This is where key bindings become invaluable, significantly enhancing productivity.
 
 However, remembering the vast array of defaault and custom key bindings can be challenging. This is where [WhichKey](https://github.com/folke/which-key.nvim) steps in, offering a visual guide to all possible key bindings for the command your started typing.
 
