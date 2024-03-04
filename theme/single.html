@@ -1,12 +1,17 @@
 {{define "extra_head"}}
 <link rel="stylesheet" href="/css/hl.css" />
 {{end}} {{define "content"}}
+<nav class="navigation">
+  ~/
+  <a href="/">Home</a>
+  /
+  <a href="/notes">Notes</a>
+  <span> / {{.Post.Title}}</span>
+</nav>
 <main class="single">
   <section class="container">
     <h1 class="post-title">{{.Post.Title}}</h1>
-    <div class="c-gray">{{.Post.Date.Format "Jan 2, 2006"}}</div>
   </section>
-  <div class="divider"></div>
   <section class="relative container">
     <aside class="sidebar">
       <nav class="toc"></nav>
@@ -32,7 +37,7 @@
     const tocEl = document.querySelector(".toc");
     h2.forEach((el) => {
       const a = `<a href="#${el.getAttribute("id")}" data-id="${el.getAttribute(
-        "id"
+        "id",
       )}" title="${el.textContent}">${el.textContent}</a>`;
       tocEl.innerHTML += a;
     });
@@ -46,7 +51,7 @@
               a.classList.remove("active");
             });
             const tocLink = document.querySelector(
-              `.toc a[href='#${entry.target.id}']`
+              `.toc a[href='#${entry.target.id}']`,
             );
             tocLink.classList.add("active");
           }
@@ -56,7 +61,7 @@
         root: null,
         rootMargin: "-100px",
         threshold: 1,
-      }
+      },
     );
 
     h2.forEach((el) => {

@@ -1,17 +1,13 @@
-{{define "extra_head"}}
-<style>
-  nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-</style>
-{{end}} {{define "content"}}
+{{define "extra_head"}} {{end}} {{define "content"}}
+<nav class="navigation">
+  ~/
+  <a href="/">Home</a>
+  / Tags
+</nav>
 <main>
   <div class="container">
-    <h1>Tags</h1>
+    <h3>Tags</h3>
   </div>
-  <div class="divider"></div>
   <div class="container">
     <nav>
       {{range .Tags}}

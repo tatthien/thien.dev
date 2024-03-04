@@ -1,15 +1,17 @@
 {{define "extra_head"}}{{end}} {{define "content"}}
+<nav class="navigation">
+  ~/
+  <a href="/">Home</a>
+  / Notes
+</nav>
 <main>
-  <section class="container">
-    <h1>Posts</h1>
-  </section>
-  <div class="divider"></div>
   <section id="posts" class="container">
+    <h3>Notes</h3>
     <ul class="post-list">
       {{range .Posts}}
       <li class="post-item">
-        <span class="post-date">{{ .Date.Format "02-01-2006" }}</span>
         <a href="{{.Permarlink}}">{{.Title}}</a>
+        <span class="meta">{{ .Date.Format "02-01-2006" }}</span>
       </li>
       {{end}}
     </ul>

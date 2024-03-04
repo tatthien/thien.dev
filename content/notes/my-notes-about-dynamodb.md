@@ -83,7 +83,7 @@ As you can see, we have four access patterns (and more). Defining these are real
 
 In RDB, we can use join to retrieve the relationships between entities. But there are no joins in DynamoDB. We have to think of the strategies to deal with that issue.
 
-About the strategies, I think [this awesome article](https://www.alexdebrie.com/posts/dynamodb-one-to-many/) explains in detail how to use complex attributes, composite primary key and secondary indexes.
+About the strategies, I think [this awesome article](https://www.alexdebrie.com/notes/dynamodb-one-to-many/) explains in detail how to use complex attributes, composite primary key and secondary indexes.
 
 Get back to the example above, I'd to take the example of using the composite primary + DynamoDB Query API to achive the access patterns.
 
@@ -110,7 +110,7 @@ func (c GetExtensionVersions) ToKeyConditionBuilder() expression.KeyConditionBui
 I cannot learn and write up about DynamoDB without these references.
 
 - https://www.dynamodbguide.com/
-- https://www.alexdebrie.com/posts/dynamodb-one-to-many/
+- https://www.alexdebrie.com/notes/dynamodb-one-to-many/
 - https://blog.devgenius.io/how-to-do-single-table-design-with-dynamodb-db9101a43277
 
 ## Conclusion
