@@ -10,7 +10,7 @@
     <ul class="post-list">
       {{range .Posts}}
       <li class="post-item">
-        <a href="{{.Permarlink}}">{{.Title}}</a>
+        <a href="{{.Permalink}}">{{.Title}}</a>
         <span class="meta">{{ .Date.Format "02-01-2006" }}</span>
       </li>
       {{end}}

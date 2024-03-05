@@ -12,6 +12,13 @@
   <section class="container">
     <h1 class="post-title">{{.Post.Title}}</h1>
   </section>
+  {{ if ne .Post.FeaturedImage "" }}
+  <section class="container">
+    <p>
+      <img src="{{.Post.FeaturedImage}}" alt="{{.Post.Title}}" />
+    </p>
+  </section>
+  {{ end }}
   <section class="relative container">
     <aside class="sidebar">
       <nav class="toc"></nav>
