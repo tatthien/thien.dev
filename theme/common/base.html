@@ -62,15 +62,19 @@
     </div>
 
     {{template "extra_footer" .}}
-    <script src="https://unpkg.com/quicklink@2.2.0/dist/quicklink.umd.js"></script>
+    <script
+      defer
+      src="https://unpkg.com/quicklink@2.2.0/dist/quicklink.umd.js"
+    ></script>
     <script id="giraffe-global">
       var __GIRAFFE__ = {
         config: {{ .Site }}
       }
     </script>
     <script>
-      // Quicklink
-      quicklink.listen();
+      window.addEventListener("DOMContentLoaded", () => {
+        quicklink.listen();
+      });
     </script>
   </body>
 </html>
