@@ -4,7 +4,7 @@
   --container-w: 700px;
   --font-size-sm: 0.875rem;
   --font-mono: "Cousine", monospace;
-  --font-primary: system-ui;
+  --font-primary: "InterVariable", system-ui;
   --font-serif: "Literata", serif;
   --c-primary: #006fd6;
   --bg: #fff;
@@ -31,6 +31,10 @@
   --bg-header: rgba(255, 255, 255, 0.6);
   --kbar-button-bg: rgba(0, 0, 0, 0.05);
   --kbar-button-keys-border: rgba(0, 0, 0, 0.2);
+
+  font-feature-settings:
+    "liga" 1,
+    "calt" 1;
 }
 
 body {
