@@ -20,7 +20,8 @@
 
     {{ $title := .Site.Title }} {{ $desc := .Site.Description }} {{ if
     .IsSingular }} {{ $title = .Post.Title }} {{ $desc = .Post.Description }} {{
-    end }}
+    end }} {{ $url := .Site.BaseURL }} {{ if .IsSingular }} {{ $url = print
+    .Site.BaseURL "/" .Post.Type "/" .Post.Slug ".html" }} {{ end }}
 
     <title>{{ $title }}</title>
 
@@ -32,7 +33,7 @@
     <meta itemprop="image" content="/img/og-image.webp" />
 
     <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="{{ .Site.BaseURL }}" />
+    <meta property="og:url" content="{{ $url }}" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="{{ $title }}" />
     <meta property="og:description" content="{{ $desc }}" />
