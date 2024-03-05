@@ -12,13 +12,6 @@
   <section class="container">
     <h1 class="post-title">{{.Post.Title}}</h1>
   </section>
-  {{ if ne .Post.FeaturedImage "" }}
-  <section class="container">
-    <p>
-      <img src="{{.Post.FeaturedImage}}" alt="{{.Post.Title}}" />
-    </p>
-  </section>
-  {{ end }}
   <section class="relative container">
     <aside class="sidebar">
       <nav class="toc"></nav>
@@ -42,10 +35,10 @@
     // TOC
     const h2 = document.querySelectorAll("h2");
     const tocEl = document.querySelector(".toc");
-    h2.forEach((el) => {
+    h2.forEach((el, index) => {
       const a = `<a href="#${el.getAttribute("id")}" data-id="${el.getAttribute(
         "id",
-      )}" title="${el.textContent}">${el.textContent}</a>`;
+      )}" title="${el.textContent}">${index + 1}. ${el.textContent}</a>`;
       tocEl.innerHTML += a;
     });
 
