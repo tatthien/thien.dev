@@ -3,6 +3,7 @@ title: "Neovim Plugin: Which Key"
 date: 2024-03-04T19:22:11.239Z
 description: WhichKey is a lua plugin for Neovim 0.5 that displays a popup with possible key bindings of the command you started typing.
 tags: vim
+featuredImage: /img/neovim-plugin-which-key/featured-image.png
 ---
 
 Vim/Neovim is a keyboard-driven IDE, which means you can code efficiently without needing to switch between your keyboard and your mouse. This is where key bindings become invaluable, significantly enhancing productivity.

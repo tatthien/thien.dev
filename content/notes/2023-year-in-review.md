@@ -3,6 +3,7 @@ title: "2023: A year in review"
 date: 2023-12-31T19:22:11.239Z
 description: My 2023
 tags: recap, en
+featuredImage: /img/2023-a-year-in-review/featured-image.png
 ---
 
 This year I:
