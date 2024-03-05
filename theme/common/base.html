@@ -21,7 +21,9 @@
     {{ $title := .Site.Title }} {{ $desc := .Site.Description }} {{ if
     .IsSingular }} {{ $title = .Post.Title }} {{ $desc = .Post.Description }} {{
     end }} {{ $url := .Site.BaseURL }} {{ if .IsSingular }} {{ $url = print
-    .Site.BaseURL "/" .Post.Type "/" .Post.Slug ".html" }} {{ end }}
+    .Site.BaseURL "/" .Post.Type "/" .Post.Slug ".html" }} {{ end }} {{ $image
+    := "/img/og-image.webp" }} {{ if and (.IsSingular) (ne .Post.FeaturedImage
+    "")}} {{ $image = .Post.FeaturedImage }} {{ end }}
 
     <title>{{ $title }}</title>
 
@@ -30,20 +32,20 @@
     <!-- Google / Search Engine Tags -->
     <meta itemprop="name" content="{{ $title }}" />
     <meta itemprop="description" content="{{ $desc }}" />
-    <meta itemprop="image" content="/img/og-image.webp" />
+    <meta itemprop="image" content="{{ $image }}" />
 
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content="{{ $url }}" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="{{ $title }}" />
     <meta property="og:description" content="{{ $desc }}" />
-    <meta property="og:image" content="/img/og-image.webp" />
+    <meta property="og:image" content="{{ $image }}" />
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="{{ $title }}" />
     <meta name="twitter:description" content="{{ $desc }}" />
-    <meta name="twitter:image" content="/img/og-image.webp" />
+    <meta name="twitter:image" content="{{ $image }}" />
     {{template "extra_head" .}}
   </head>
 
