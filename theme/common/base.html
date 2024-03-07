@@ -71,15 +71,43 @@
       defer
       src="https://unpkg.com/quicklink@2.2.0/dist/quicklink.umd.js"
     ></script>
+
     <script id="giraffe-global">
       var __GIRAFFE__ = {
         config: {{ .Site }}
       }
     </script>
+
     <script>
       window.addEventListener("DOMContentLoaded", () => {
         quicklink.listen();
       });
+
+      window.addEventListener("load", () => sendAnalytics("pageview"));
+
+      function sendAnalytics(eventName, eventData = {}) {
+        const data = {
+          eventName,
+          eventData,
+          timestamp: Date.now().toString(),
+          url: window.location.href,
+        };
+
+        fetch(
+          "https://rzw6iethkh.execute-api.ap-southeast-1.amazonaws.com/events",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              url: window.location.href,
+              name: eventName,
+              data: eventData,
+            }),
+          },
+        );
+      }
     </script>
   </body>
 </html>
