@@ -83,7 +83,7 @@
         quicklink.listen();
       });
 
-      window.addEventListener("load", () => sendAnalytics("pageview"));
+      window.addEventListener("load", () => sendAnalytics("page_view"));
 
       function sendAnalytics(eventName, eventData = {}) {
         const data = {
@@ -93,20 +93,17 @@
           url: window.location.href,
         };
 
-        fetch(
-          "https://xbvw1rehj8.execute-api.ap-southeast-1.amazonaws.com/events",
-          {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-              url: window.location.href,
-              name: eventName,
-              data: eventData,
-            }),
+        fetch("https://prod.api.12-px.com/events", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
           },
-        );
+          body: JSON.stringify({
+            url: window.location.href,
+            name: eventName,
+            data: eventData,
+          }),
+        });
       }
     </script>
   </body>

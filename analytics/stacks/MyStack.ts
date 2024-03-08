@@ -1,6 +1,6 @@
 import { StackContext, Api, EventBus } from "sst/constructs";
 
-export function API({ stack }: StackContext) {
+export function API({ stack, app }: StackContext) {
   const bus = new EventBus(stack, "bus", {
     defaults: {
       retries: 10,
@@ -15,6 +15,10 @@ export function API({ stack }: StackContext) {
           SUPABASE_KEY: String(process.env.SUPABASE_KEY),
         },
       },
+    },
+    customDomain: {
+      domainName: `${app.stage}.api.12-px.com`,
+      hostedZone: "12-px.com",
     },
     routes: {
       "GET /": "packages/functions/src/lambda.handler",
