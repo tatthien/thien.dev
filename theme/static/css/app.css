@@ -494,7 +494,6 @@ table th {
 }
 
 @media all and (min-width: 768px) {
-
   .post-date {
     display: inline;
   }
@@ -723,6 +722,11 @@ table th {
   background: #f6f6f6;
   padding: 0.25rem 0.5rem;
   border-radius: 0.5rem;
+}
+
+.work:hover {
+  text-decoration: none;
+  background: #efefef;
 }
 
 .work .meta {
