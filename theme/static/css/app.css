@@ -273,8 +273,8 @@ h1 {
 
 ol,
 ul {
-  padding: 0 0 0 1rem;
-  margin: 0 0 1rem 0;
+  padding: 0 0 0 0.75rem;
+  margin: 0 0 0.75rem 0;
 }
 
 ul li {
@@ -286,7 +286,7 @@ ul li {
 ul li::before {
   position: absolute;
   left: 0;
-  content: "\2022";
+  content: "-";
 }
 
 ol {
@@ -317,11 +317,29 @@ blockquote {
   padding: 1rem 1.5rem;
   margin-bottom: 1rem;
   color: var(--c-gray);
+  position: relative;
+}
+
+blockquote:before {
+  content: "";
+  position: absolute;
+  width: 1.25px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(
+    to bottom,
+    #ffbe0b,
+    #fb5607,
+    #ff006e,
+    #8338ec,
+    #3a86ff
+  );
 }
 
 @media all and (min-width: 768px) {
   blockquote {
-    padding: 2.5rem 3rem;
+    padding: 1rem 2rem;
   }
 }
 
@@ -719,14 +737,15 @@ table th {
   align-items: center;
   padding-bottom: 0.5rem;
   margin-bottom: 0.5rem;
-  background: #f6f6f6;
+  background: #f9fafb;
   padding: 0.25rem 0.5rem;
   border-radius: 0.5rem;
+  border: 1px solid #f3f4f6;
 }
 
 .work:hover {
   text-decoration: none;
-  background: #efefef;
+  background: #f5f5f5;
 }
 
 .work .meta {
