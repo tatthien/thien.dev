@@ -706,7 +706,7 @@ table th {
   --sidebar-w: 200px;
   width: var(--sidebar-w);
   position: fixed;
-  left: calc((100vw - var(--container-w)) / 2 - var(--sidebar-w) - 16px);
+  right: calc((100vw - var(--container-w)) / 2 - var(--sidebar-w) - 16px);
   padding: 0 0.75rem;
   display: none;
 }
