@@ -4,7 +4,7 @@
   --container-w: 700px;
   --font-size-sm: 0.875rem;
   --font-mono: "Cousine", monospace;
-  --font-primary: "InterVariable", system-ui;
+  --font-primary: "IBM Plex Sans", system-ui;
   --font-serif: "Literata", serif;
   --c-primary: #006fd6;
   --bg: #fff;
@@ -40,7 +40,7 @@
 body {
   min-height: 100vh;
   font-family: var(--font-primary);
-  font-size: 16px;
+  font-size: 1.125rem;
   line-height: 1.6;
   color: var(--c-body);
   background: var(--bg);
@@ -55,12 +55,12 @@ body {
   width: 100%;
   padding-right: 1rem;
   padding-left: 1rem;
-  margin: 0 auto;
 }
 
 @media all and (min-width: 768px) {
   .container {
     width: var(--container-w);
+    padding-left: 1.5rem;
   }
 }
 
@@ -698,7 +698,6 @@ table th {
 .single .post-title {
   font-size: 2rem;
   line-height: 2.1rem;
-  margin-top: 2.5rem;
   margin-bottom: 2.5rem;
 }
 
@@ -706,7 +705,8 @@ table th {
   --sidebar-w: 200px;
   width: var(--sidebar-w);
   position: fixed;
-  right: calc((100vw - var(--container-w)) / 2 - var(--sidebar-w) - 16px);
+  right: calc((100vw - var(--container-w) - var(--sidebar-w)));
+  bottom: 4rem;
   padding: 0 0.75rem;
   display: none;
 }
@@ -763,7 +763,7 @@ table th {
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   z-index: 9999;
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 
 .navigation a {

@@ -17,7 +17,7 @@
       {{range .Posts}} {{if eq .Type "notes"}}
       <li class="post-item">
         <a href="{{.Permalink}}">{{.Title}}</a>
-        <span class="meta">{{ .Date.Format "2006" }}</span>
+        <span class="meta">{{ .Date.Format "02-01-2006" }}</span>
       </li>
       {{end}} {{end}}
     </ul>
