@@ -1,6 +1,6 @@
 ---
 title: Side projects
-date: 2024-12-06T19:22:11.239Z
+date: 2024-06-12T19:22:11.239Z
 tags: recap, vi
 ---
 
