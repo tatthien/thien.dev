@@ -701,18 +701,18 @@ table th {
   margin-bottom: 2.5rem;
 }
 
-.single .sidebar {
+.sidebar {
   --sidebar-w: 200px;
   width: var(--sidebar-w);
   position: fixed;
   right: calc((100vw - var(--container-w) - var(--sidebar-w)));
   bottom: 4rem;
-  padding: 0 0.75rem;
+  padding: 0 1.5rem;
   display: none;
 }
 
 @media all and (min-width: 1024px) {
-  .single .sidebar {
+  .sidebar {
     display: block;
   }
 }
